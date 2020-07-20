@@ -19,6 +19,7 @@ var checkHeader = function(){
     }
 }
 
+document.getElementById('nav__image').src = "imgs/logov2.png";
 
 function topFunction() {
     document.documentElement.scrollTop = 0;
