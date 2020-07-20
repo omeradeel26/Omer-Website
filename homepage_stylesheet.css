@@ -12,8 +12,7 @@ html{
 body{
     margin:0;
     padding: 0;
-    height: 100rem;
-    background-color: black;
+    height: 200rem;
 }
 
 @font-face{
@@ -70,6 +69,47 @@ body{
     opacity: 0.5;
 	width: 100%;
     height: 100%;
+}
+
+.intro__button{
+    position: relative;
+    z-index: 2;
+    width: 150px;
+    height: 55px;
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    border:1px solid rgba(238,238,238,0.5);
+    background-color: transparent;
+    font-family: heading-small;
+    padding: 0.40em 1em;
+    color: #eee;
+    transition-duration:1.5s;
+}
+
+.intro__button:hover{
+    border:1px solid rgba(238,238,238,0.4);
+    background-color: 1px solid rgba(238,238,238,0.4);
+}
+
+.intro__button a {
+    color: #eee;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.intro__button svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #add8e6;
+    stroke-width:3px;
+    stroke-dasharray: 160 480;
+    stroke-dashoffset: 160;
+    transition: 1.5s ease;
+}  
+.intro__button:hover svg {
+    stroke-dashoffset: -480;
 }
 
 #nav__image{
@@ -137,7 +177,7 @@ header ul li{
 }
 
 .project{
-    height: 75rem;
+    height:5rem;
     background-color:white;
     position: absolute;
     width: 100%;
@@ -148,7 +188,7 @@ header ul li{
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
-    grid-auto-rows: 2em;
+    grid-auto-rows: minmax(2em, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
 }
