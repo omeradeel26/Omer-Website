@@ -12,7 +12,7 @@ html{
 body{
     margin:0;
     padding: 0;
-    height: 200rem;
+    height: 180rem;
     overflow-x: hidden;
 }
 
@@ -190,9 +190,9 @@ header ul li{
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
-    grid-auto-rows: minmax(38rem, auto);
+    grid-auto-rows: minmax(35rem, auto);
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3em;
+    grid-gap: 2em;
 }
 
 .project__heading{
@@ -228,22 +228,33 @@ header ul li{
 }
 
 .project__col{
-    border: 6px solid rgba(0,0,0,0.6);
+    border: 5px solid rgba(0,0,0,0.6);
     display:flex;
     align-items: flex-end;
     overflow: hidden;
 }
 
 .project__col--checkers{
-    background-image: url(imgs/checkers.jpg)
+    background-image: url(imgs/checkers.jpg);
+    background-position: center;
 }
 
 .project__col--sudoku{
-    background-image: url(imgs/sudoku.jpg)
+    background-image: url(imgs/sudoku.jpg);
+    background-position: center;
+}
+
+.project__col--reddit{
+    background-image: url(imgs/reddit.png);
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .project__col--garden{
-    background-image: url(imgs/garden.jpg.jpg)
+    background-image: url(imgs/garden.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
 }
 
 .project__overlay::before {
@@ -254,7 +265,7 @@ header ul li{
     opacity: 0.6;
 	width: 100%;
     height: 0;
-    transition-duration: 1s;
+    transition-duration: .65s;
     transition-timing-function: ease-out;
     bottom: 0;
 }
