@@ -1,0 +1,179 @@
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+::-webkit-scrollbar{
+    width:0;
+}
+
+* {margin:0; padding: 0;}
+
+body{
+    margin:0;
+    padding: 0;
+    height: 100rem;
+    background-color: black;
+}
+
+@font-face{
+    font-family: heading;
+    src: url("/fonts/Coves\ Bold.otf")
+}
+
+@font-face{
+    font-family: heading-small;
+    src: url("/fonts/Coves\ Light.otf")
+}
+
+.intro{
+    min-height: 76rem;
+    width: 100%;
+    background-image: url('/imgs/homepic.JPG');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+
+.intro__container{
+    position:absolute;
+    width: 55rem;
+    margin-left: 4%;
+    margin-top: 18em;
+}
+
+.intro__heading{
+    color: white;
+    font-family: heading;
+    font-size: 15rem;
+    margin: 0;
+    position: relative;
+    line-height: 1em;
+}
+
+.intro__subheading{
+    color: lightblue;
+    font-family: heading-small;
+    font-size: 5rem;
+    margin: 0;
+    margin-top: 0.5em;
+    position:relative;   
+}
+
+.intro::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.5;
+	width: 100%;
+    height: 100%;
+}
+
+#nav__image{
+    height: 13rem;
+    cursor: pointer;
+    margin-right:2em;
+    margin-left: 2em;
+    margin-top: -2em;
+}
+
+header{
+    height: 8rem;
+    top: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 3;
+    color: white;
+    width: 100%;
+    background-color: transparent;
+    padding: 2em;
+    transition-timing-function: ease;
+    transition-duration: 500ms;
+}
+
+header.sticky{
+    padding: 0.5em;
+    background-color: lightblue;
+    color: black;        
+}
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 95%;
+    margin: 0;
+}
+
+header ul li{
+    display: inline;
+    margin-right: 2em;
+}
+
+
+.nav__links{
+    color:white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: heading-small;
+    margin-top: -3em;
+    transition-duration: 0.5s;
+}
+
+.nav__links:hover{
+    color: lightblue;
+}
+
+.nav__links.stick{
+    color: black;
+}
+
+.nav__links.stick:hover{
+    color:white;
+}
+
+.project{
+    height: 75rem;
+    background-color:white;
+    position: absolute;
+    width: 100%;
+}
+
+.project__container{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 0.5em;
+    display:grid;
+    grid-auto-rows: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+}
+
+.project__progress{
+    width: 50%;
+}
+
+.project__heading{
+    font-family: heading;
+    margin: 4rem 7rem;
+    margin-top: 10rem;
+    font-size: 8rem;
+}
+
+.project__container > div{
+    background: #eee;
+    padding: 1em;
+}
+
+.project__container > div:nth-child(odd){
+    background: #ddd;
+}
+
+.project__img{
+    border: 3px solid black;
+    width: 50rem;
+}
