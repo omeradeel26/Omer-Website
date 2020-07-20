@@ -13,6 +13,7 @@ body{
     margin:0;
     padding: 0;
     height: 200rem;
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -125,7 +126,7 @@ header{
     top: 0;
     margin: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     color: white;
     width: 100%;
     background-color: transparent;
@@ -138,6 +139,7 @@ header.sticky{
     padding: 0.5em;
     background-color: lightblue;
     color: black;        
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
 }
 
 header ul{
@@ -188,32 +190,69 @@ header ul li{
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
-    grid-auto-rows: minmax(2em, auto);
+    grid-auto-rows: minmax(38rem, auto);
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-}
-
-.project__progress{
-    width: 50%;
+    grid-gap: 3em;
 }
 
 .project__heading{
     font-family: heading;
-    margin: 4rem 7rem;
+    text-align:center;
+    opacity: 0.8;
+    margin-bottom:3rem;
     margin-top: 10rem;
-    font-size: 8rem;
+    font-size: 7rem;
 }
 
-.project__container > div{
-    background: #eee;
-    padding: 1em;
+.project__overlay{ 
+    position: relative;
+    width: 100%;
+    height: 14rem;
+    z-index: 3;
 }
 
-.project__container > div:nth-child(odd){
-    background: #ddd;
+.project__overlaytext{
+    position:relative;
+    color: transparent;
+    font-family: heading-small;
+    font-size: 2rem;
+    padding: 0.75em;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    z-index:4;
 }
 
-.project__img{
-    border: 3px solid black;
-    width: 50rem;
+.project__overlay:hover > .project__overlaytext{
+    visibility: visible;
+    color: white;
+}
+
+.project__col{
+    border: 5px solid rgba(0,0,0,0.7);
+    border-radius: 1em;
+    display:flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.project__col--checkers{
+    background-image: url(imgs/checkers.jpg)
+}
+
+
+.project__overlay::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.6;
+	width: 100%;
+    height: 0;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    bottom: 0;
+}
+
+.project__overlay:hover::before{
+    height: 100%;
 }
