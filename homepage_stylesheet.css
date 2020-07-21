@@ -228,7 +228,7 @@ header ul li{
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
-    grid-auto-rows: minmax(32rem, auto);
+    grid-auto-rows: minmax(35rem, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2em;
 }
@@ -266,9 +266,7 @@ header ul li{
 }
 
 .project__col{
-    border: 5px solid rgba(0,0,0,0.6);
-    display:flex;
-    border-bottom: 10px solid rgba(0,0,0,0.6);
+    display: flex;
     align-items: flex-end;
     overflow: hidden;
 }
@@ -322,11 +320,11 @@ header ul li{
 .project__git{
     width: 30px;
     position: relative;
-    filter: brightness(70%);
+    filter: brightness(100%);
     margin-left: 18rem;
     transition: all 0.2s ease-out;
 }
 
 .project__git:hover{
-    filter: brightness(100%);
+    filter: brightness(70%);
 }
