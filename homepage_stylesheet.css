@@ -264,7 +264,7 @@ header ul li{
 }
 
 .project{
-    height:auto;
+    min-height:110rem;
     background-color:#eee;
     width: 100%;
     border: .1px solid transparent;
@@ -275,9 +275,9 @@ header ul li{
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
-    grid-auto-rows: minmax(35rem, auto);
+    grid-auto-rows: minmax(32rem, auto);
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2em;
+    grid-gap: 3.5em;
 }
 
 .project__heading{
@@ -393,11 +393,11 @@ header ul li{
 }
 
 .scroll-icon {
-    margin-left: 73rem;
-    margin-top: 15%;
+    margin-top: 70rem;
+    margin-left: 50%;
     transform: scale(1.5);
     display: block;
-    position: relative;
+    position: absolute;
     height: 3em;
     width: 1.5em;
     border: .15em solid #fff;
@@ -422,5 +422,18 @@ header ul li{
   width: 100%;
   border-radius: inherit;
   background: #fff;
-  animation: scroll_1 2.75s ease-in-out infinite;
+  animation: scroll_1 3s ease-in-out infinite;
+}
+
+.startup{
+    min-height: 80rem;
+    background-color: white;
+}
+
+.startup__heading{
+    margin: 10rem 0;
+    font-size: 7rem;
+    font-family: heading;
+    opacity: 0.8;
+    text-align: center;
 }
