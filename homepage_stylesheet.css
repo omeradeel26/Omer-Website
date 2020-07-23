@@ -449,20 +449,23 @@ header ul li{
 .startup__accessoinfo{
     width: 50%;
     border: 3px solid black;
-    font-size: 2rem;
-    font-family: small-heading;
+    font-size: 3rem;
+    font-family: heading-small;
+    padding: 0.5em;
+    background-color: lightblue
 }
 .startup__accessoheading{
-    font-size: 6rem;
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 5rem;
     font-weight: 1000;
-    margin-left: 1em;
     font-family:heading;
+    opacity: 0.8;
 }
 
 .startup__accessoimg{
-    margin: 10rem 0;
+    margin: 2rem 0;
     width: 60rem;
-    height: 15rem;
 }
 
 
