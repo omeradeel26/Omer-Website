@@ -120,27 +120,32 @@ body{
 }
 
 #intro__linkedin{
-    height: 6rem;
+    font-size: 5rem;
     z-index: 1;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
     filter: brightness(110%);
-    transition: filter 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: white;
 }
 
 #intro__linkedin:hover{
-    filter: brightness(65%);
+    color: #0E76A8;
 }
 
 #intro__github{
-    height: 5rem;
+    font-size: 5rem;
     z-index: 1;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
     margin-bottom: 0.5rem;
     filter: brightness(110%);
-    transition: filter 0.5s ease-in-out;
+    transition: all .5s ease-in-out;
+    color: white;
 }
 
+
 #intro__github:hover{
-    filter: brightness(50%);
+    color: purple;
 }
 
 
@@ -157,7 +162,12 @@ body{
     cursor: pointer;
     margin-right:2em;
     margin-left: 2em;
+    transition: all 1s ease;
     margin-top: -2em;
+}
+
+#nav__image:hover{
+    filter: brightness(70%);
 }
 
 header{
@@ -216,11 +226,31 @@ header ul li{
     color:white;
 }
 
-.project{
-    height:5rem;
-    background-color:white;
-    position: absolute;
+.about{
+    height: 80rem;
     width: 100%;
+    background-color:white;
+}
+
+.about__container{
+    margin-top: 4rem;
+    margin: 0 auto;
+    width: 70%;
+    border: 3px solid black;
+    display: flex;
+}
+
+.about__content{
+    width: 50%;
+    font-family: heading-small;
+    font-size: 5rem;
+}
+
+.project{
+    height:auto;
+    background-color:#eee;
+    width: 100%;
+    border: .1px solid transparent;
 }
 
 .project__container{
@@ -236,7 +266,7 @@ header ul li{
 .project__heading{
     font-family: heading;
     text-align:center;
-    opacity: 0.8;
+    opacity: 0.85;
     margin-bottom:3rem;
     margin-top: 10rem;
     font-size: 7rem;
@@ -247,6 +277,7 @@ header ul li{
     width: 100%;
     height: 14rem;
     z-index: 3;
+    padding-bottom: 1em;
 }
 
 .project__overlaytext{
@@ -258,6 +289,10 @@ header ul li{
     visibility: hidden;
     transition-duration: 0.6s;
     z-index:4;
+}
+
+.project__overlaytext a{
+    text-decoration: underline;
 }
 
 .project__overlay:hover > .project__overlaytext{
@@ -274,6 +309,7 @@ header ul li{
 .project__col--checkers{
     background-image: url(imgs/checkers.jpg);
     background-position: center;
+    background-size: cover;
 }
 
 .project__col--sudoku{
@@ -283,21 +319,23 @@ header ul li{
 
 .project__col--reddit{
     background-image: url(imgs/reddit.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
 }
 
 .project__col--garden{
     background-image: url(imgs/garden.jpg);
-
-    background-size: contain;
+    background-size: cover;
 }
 
 .project__col--website2019{
     background-image: url(imgs/pro.PNG);
     background-position: 25%;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+
 }
 
 .project__overlay::before {
@@ -317,14 +355,55 @@ header ul li{
     height: 100%;
 }
 
-.project__git{
-    width: 30px;
-    position: relative;
-    filter: brightness(100%);
-    margin-left: 18rem;
-    transition: all 0.2s ease-out;
+.project__overlaytext i{
+    transition: all 0.4s ease-in;
+    margin-left: 20rem;
+    font-size:30px;
+    color: white;
 }
 
-.project__git:hover{
-    filter: brightness(70%);
+.project__overlaytext i:hover{
+    filter: brightness(60%);
+}
+
+
+@keyframes scroll_1 {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-0.6em); }
+  50%  { transform: translateY(0); }
+  75%  { transform: translateY(0.6em); }
+  100% { transform: translateY(0); }
+}
+
+.scroll-icon {
+    margin-left: 74rem;
+    margin-bottom: 4rem;
+    transform: scale(1.5);
+    display: block;
+    position: relative;
+    height: 3em;
+    width: 1.5em;
+    border: .15em solid #fff;
+    border-radius: 1em;
+}
+  
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #fff;
+  animation: scroll_1 2.75s ease-in-out infinite;
 }
