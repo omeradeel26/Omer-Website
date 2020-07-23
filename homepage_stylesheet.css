@@ -167,7 +167,7 @@ body{
 }
 
 #nav__image:hover{
-    filter: brightness(70%);
+    filter: brightness(80%);
 }
 
 header{
@@ -431,9 +431,47 @@ header ul li{
 }
 
 .startup__heading{
-    margin: 10rem 0;
+    margin: 7rem 0;
     font-size: 7rem;
     font-family: heading;
     opacity: 0.8;
     text-align: center;
+}
+
+.startup__container1{
+    margin: 0 auto;
+    min-height: 40rem;
+    border: 3px solid black;
+    width: 70%;
+    display: flex;
+}
+
+.startup__accessoinfo{
+    width: 50%;
+    border: 3px solid black;
+    font-size: 2rem;
+    font-family: small-heading;
+}
+.startup__accessoheading{
+    font-size: 6rem;
+    font-weight: 1000;
+    margin-left: 1em;
+    font-family:heading;
+}
+
+.startup__accessoimg{
+    margin: 10rem 0;
+    width: 60rem;
+    height: 15rem;
+}
+
+
+.fade{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+.on{
+    opacity: 100%;
+    transform: translateY(0);
 }

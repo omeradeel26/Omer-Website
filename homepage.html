@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header>
+    <header fade>
         <ul>
             <div>
                 <img onclick="topFunction()"  id="nav__image" src="imgs/logov2.png" alt="logo">
@@ -20,7 +20,7 @@
             <div>
                 <li><a class="nav__links"  href="#about">ABOUT</a></li>
                 <li><a class="nav__links" href=#projects>PROJECTS</a></li>
-                <li><a class="nav__links" href="#contact">STARTUPS</a></li>
+                <li><a class="nav__links" href="#startup">STARTUPS</a></li>
                 <li><a class="nav__links" href="#contact">SKILLS</a></li>
                 <li><a class="nav__links" href="#contact">CONTACT</a></li>
             </div>
@@ -48,10 +48,11 @@
             <a target="_blank" href="https://github.com/omeradeel26"><span id="intro__github" class="fa fa-github"></span></a>
         </div>
     </section>
+
     <div id="about"></div>
     <section class="about">
-        <div class="about__heading">ABOUT ME</div>
-        <div class="about__container">
+        <div class="about__heading fade">ABOUT ME</div>
+        <div class="about__container fade">
             <div class="about__content">
                 <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I have a great passion for technology and also love to
                 get involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then coding completely from scratch!
@@ -73,8 +74,8 @@
 
     <span id="projects"></span>
     <section class="project">
-        <div class="project__heading">PROJECTS</div> 
-        <div class="project__container">
+        <div class="project__heading fade">PROJECTS</div> 
+        <div class="project__container fade">
              <div class="project__col project__col--checkers">
                  <div class="project__overlay">
                     <div class="project__overlaytext">
@@ -113,8 +114,14 @@
         </div>
     </section>
 
-    <section class="startup">
-        <div class="startup__heading">STARTUPS</div>
+    <section class="startup" id="startup">
+        <div class="startup__heading fade">STARTUPS</div>
+        <div class="startup__container1 fade">
+            <div class="startup__accessoinfo">
+                <span class="startup__accessoheading"><b>CTO</b></span>
+            </div>
+            <img src="imgs/accesso.jpg" class="startup__accessoimg">
+        </div>
     </section>
 
     <script src="homepage_script.js"></script>
