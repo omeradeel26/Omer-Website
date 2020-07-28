@@ -256,11 +256,13 @@ header ul li{
     margin-bottom:16rem;
     margin-right: 5rem;
     padding: 2em;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
     background-color:lightblue;
 }
 
 .about__profile{
     height: 60rem;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
 }
 
 .project{
@@ -321,6 +323,7 @@ header ul li{
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
 }
 
 .project__col--checkers{
@@ -431,49 +434,100 @@ header ul li{
 }
 
 .startup__heading{
-    margin: 5rem 0;
+    margin: 3rem 0;
+    margin-top: 9rem;
     font-size: 7rem;
     font-family: heading;
     opacity: 0.8;
     text-align: center;
 }
 
-.startup__container1{
+.startup__maincontaineraccesso{
+    width: 80%;
     margin: 0 auto;
-    min-height: 40rem;
-    border: 3px solid black;
-    width: 70%;
+    margin-top: 4rem;
     display: flex;
 }
 
-.startup__accessoinfo{
+.startup__subcontaineraccesso{
+    background-color: transparent;
     width: 50%;
-    border: 3px solid black;
-    font-size: 3rem;
-    font-family: heading-small;
-    padding: 0.5em;
-    background-color: lightblue
+    min-height: 45rem;
 }
+
+.startup__finalcontaineraccesso{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-out;
+    background-color: lightblue;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
+}
+
+.startup__subcontaineraccesso:hover .startup__finalcontaineraccesso {
+    transform: rotateY(180deg);
+  }
+
+.startup__accessoinfoback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.startup__accessoinfofront{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.startup__accessoinfo {
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-family: heading-small;
+}
+
+.startup__accessoinfo ul {
+    margin-left: 4rem;
+}
+
+.startup__accessoinfo ul li{
+    margin-top: 1.5rem;
+    width:75%;
+}
+.startup__accessodate{
+    font-size: 3rem;
+    display:block;
+    font-family:heading-small;
+    margin-bottom: 1rem;
+}
+
+.startup__accessoread{
+    text-align: right;
+}
+
 .startup__accessoheading{
     display: block;
     margin-bottom: 1rem;
-    font-size: 5rem;
-    font-weight: 1000;
-    font-family:heading;
-    opacity: 0.8;
+    font-size: 4rem;
+    font-weight: 4000;
+    font-family: heading-small;
 }
 
 .startup__accessoimg{
     margin: 2rem 0;
-    width: 60rem;
+    height: 15rem;
 }
-
 
 .fade{
     opacity: 0;
     transform: translateY(50px);
     transition: all 0.8s ease-out;
 }
+
 .on{
     opacity: 100%;
     transform: translateY(0);
