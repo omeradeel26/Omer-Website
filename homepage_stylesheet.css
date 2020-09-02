@@ -40,7 +40,7 @@ body{
 
 .intro__container{
     position:absolute;
-    width: 55rem;
+    width:40%;
     margin-left: 4%;
     margin-top: 18em;
 }
@@ -153,7 +153,6 @@ body{
     width: 10%;
     position:relative;
     margin-top:68rem;
-    margin-right: 4rem;
     float:right;
 }
 
@@ -349,12 +348,11 @@ header ul li{
     background-size: cover;
 }
 
-.project__col--website2019{
+.project__col--calculator{
     background-image: url(imgs/pro.PNG);
-    background-position: 25%;
+    background-position: 100%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: 15%;
 
 }
 
@@ -518,8 +516,14 @@ header ul li{
 }
 
 .startup__accessoimg{
-    margin: 2rem 0;
-    height: 15rem;
+    margin-left: 4%;
+    margin-top: 2%;
+    height: 40rem;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
+}
+
+.contact{
+    background-color: #eee;
 }
 
 .fade{
@@ -531,4 +535,61 @@ header ul li{
 .on{
     opacity: 100%;
     transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+    .nav__links{
+        font-size: 2rem;
+    }
+
+    .intro__socialicons{    
+        margin-top: 63rem;
+        margin-left:10rem;
+    }
+    
+    .intro__container{
+        margin-top: 30rem;
+        width: 90%;
+    }
+
+    .intro__heading{
+        font-size: 8rem;
+    }
+    .intro__subheading{
+        font-size: 4rem;
+    }
+
+    .about__content{
+        width: 90%;
+        margin: 2rem auto;
+        font-size: 2rem;
+        padding: 1em;
+    }
+
+    .about__heading{
+        margin-bottom: 2rem;
+    }
+
+    .about__container{
+        flex-direction:column-reverse;
+        width:  80%;
+    }
+
+    .about__profile{
+        margin-top:2rem;
+    }
+
+    .project{
+        padding:2em;
+    }
+
+    .project__container{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 0.5em;
+        display:grid;
+        grid-auto-rows: minmax(32rem, auto);
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3.5em;
+    }
 }

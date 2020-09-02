@@ -59,7 +59,7 @@
                 This website is to showcase my personal projects and also act as a platform for me to show my progress as a developer. Along with coding, I am a HUGE FAN of basketball
                 and an avid runner. I love getting to know people so feel free to send a message and we'll chat. Cheers! <br>
                 <button class="intro__button">
-                    <a href="http://www.google.com">
+                    <a target="_blank" href="http://www.google.com">
                         <svg width="152px" height="50px" viewBox="0 0 180 60" class="border">
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="bg-line" />
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="hl-line" />
@@ -104,10 +104,10 @@
                     </div>
                 </div>
             </div>
-            <div class="project__col project__col--website2019 fade">
+            <div class="project__col project__col--calculator fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>WEBSITE 2019</b><br>Basic personal website landingpage created with HTML & CSS. Updated last December 2019. <br><br> <a>READ MORE</a>
+                        <b>Arduino Calculator</b><br>Basic calculator created with Arduino MC and programmed with C langauge. Updated last June 2020 <br> <a>READ MORE</a>
                     </div>
                 </div>
             </div>
@@ -126,8 +126,8 @@
                             <span class="startup__accessoheading"><b>Chief Technology Officer, ACCESSO</b></span>
                             <span class="startup__accessodate">May 2020 - Present</span>
                             <ul>
-                                <li>Led a tech team that designed and developed current website with over 400 store reviews in Toronto</li>
-                                <li>Managed YouTube channel and created graphic design for videos</li>
+                                <li>Led a tech team that designed and developed current website with over 1500 store reviews</li>
+                                <li>Pitched in the Youth Impact Challenge, making it to the top 7 out of 400 Canadian youth startups for $10 000 </li>
                                 <li>Helped fundraise $1000 for the organization</li>
                             </ul>
                             <div class="startup__accessoread"><b>Read More On Accesso &#8594;</b></div>
@@ -148,8 +148,20 @@
                     </div>
                 </div>
             </div>
-            <img src="imgs/accesso.jpg" class="startup__accessoimg">
+            <img src="imgs/accesso.png" class="startup__accessoimg fade">
         </div>
+    </section>
+
+    <section class="contact">
+        <p>SEND E-MAIL</p>
+        <form class="contact-form" action="contactform.php" method="POST">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="text" name="mail" placeholder="Your Email">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit"  name="submit">SEND MAIL</button>
+        </form>
+
     </section>
 
     <script src="homepage_script.js"></script>
