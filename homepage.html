@@ -55,9 +55,9 @@
         <div class="about__container fade">
             <div class="about__content">
                 <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I have a great passion for technology and also love to
-                get involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then coding completely from scratch!
-                This website is to showcase my personal projects and also act as a platform for me to show my progress as a developer. Along with coding, I am a HUGE FAN of basketball
-                and an avid runner. I love getting to know people so feel free to send a message and we'll chat. Cheers! <br>
+                enjoy getting involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then coding completely from scratch!
+                This website is to showcase my personal projects and also a platform for me to demonstrate my progress as a developer. Along with coding, I am a HUGE FAN of basketball
+                and an avid runner. I love getting to know people so feel free to send a message and we can chat. Cheers! <br>
                 <button class="intro__button">
                     <a target="_blank" href="http://www.google.com">
                         <svg width="152px" height="50px" viewBox="0 0 180 60" class="border">
@@ -71,6 +71,8 @@
             <img class="about__profile" src="imgs/profile2.jpg">
         </div>
     </section>
+
+    <section
 
     <span id="projects"></span>
     <section class="project">
@@ -117,7 +119,6 @@
     <div id="startup"></div>
     <section class="startup">
         <div class="startup__heading fade">STARTUPS</div>
-        
         <div class="startup__maincontaineraccesso">
             <div class="startup__subcontaineraccesso fade">
                 <div class="startup__finalcontaineraccesso">
@@ -128,7 +129,7 @@
                             <ul>
                                 <li>Led a tech team that designed and developed current website with over 1500 store reviews</li>
                                 <li>Pitched in the Youth Impact Challenge, making it to the top 7 out of 400 Canadian youth startups for $10 000 </li>
-                                <li>Helped fundraise $1000 for the organization</li>
+                                <li>Helped fundraise over $1000 for the organization</li>
                             </ul>
                             <div class="startup__accessoread"><b>Read More On Accesso &#8594;</b></div>
                         </div>
@@ -153,15 +154,28 @@
     </section>
 
     <section class="contact">
-        <p>SEND E-MAIL</p>
-        <form class="contact-form" action="contactform.php" method="POST">
-            <input type="text" name="name" placeholder="Full Name">
-            <input type="text" name="mail" placeholder="Your Email">
-            <input type="text" name="subject" placeholder="Subject">
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="submit"  name="submit">SEND MAIL</button>
-        </form>
+        <div id="contact" class="contact__header fade">CONTACT</div>
+        <div class="contact__container">
+            <form class="contact-form" action="contactform.php" method="POST">
+                <div class="contact__row1">
+                    <div class="contact__col1">
+                        <label class="fade">NAME</label>
+                        <input type="text" class="contact__boxes fade" name="name">
+                    </div>
+                    <div class="contact__col2">
+                        <label class="fade">EMAIL</label>
+                        <input type="text" class="contact__boxes fade"name="mail">  
+                    </div>
+                </div>
+                <label class="fade">SUBJECT</label>    
+                <input type="text" name="subject" class= "contact__boxes fade">
 
+                <label class="fade">WRITE MESSAGE</label>
+                <textarea name="message" class="contact__boxes fade"></textarea>
+
+                <button type="submit" class="contact__button fade" name="submit">SEND MESSAGE</button>
+            </form>
+        </div>
     </section>
 
     <script src="homepage_script.js"></script>

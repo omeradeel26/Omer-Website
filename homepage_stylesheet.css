@@ -28,7 +28,7 @@ body{
 
 
 .intro{
-    min-height: 76rem;
+    min-height: 100vh;
     width: 100%;
     background-image: url('/imgs/homepic.JPG');
     background-attachment: fixed;
@@ -235,9 +235,8 @@ header ul li{
     text-align: center;
     margin-top: 9rem;
     margin-bottom: 4rem;
-    opacity: 0.8;
     font-family:heading;
-    font-size: 7rem;
+    font-size: 5.5rem;
 }
 
 .about__container{
@@ -284,10 +283,9 @@ header ul li{
 .project__heading{
     font-family: heading;
     text-align:center;
-    opacity: 0.85;
     margin-bottom:3rem;
     margin-top: 10rem;
-    font-size: 7rem;
+    font-size: 5.5rem;
 }
 
 .project__overlay{ 
@@ -434,7 +432,7 @@ header ul li{
 .startup__heading{
     margin: 3rem 0;
     margin-top: 9rem;
-    font-size: 7rem;
+    font-size: 5.5rem;
     font-family: heading;
     opacity: 0.8;
     text-align: center;
@@ -524,6 +522,87 @@ header ul li{
 
 .contact{
     background-color: #eee;
+    height: 90vh;
+}
+
+.contact__container{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+}
+
+.contact__boxes{
+    font-size: 2rem;
+    height: 3.5rem;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    transition-duration: 0.2s;
+}
+
+.contact__header{
+    margin: 0 auto;
+    position: relative;
+    top: 15%;
+    font-size: 5.5rem;
+    font-family: heading;
+    text-align: center;     
+}
+
+.contact__button{
+    padding: 1em;
+    font-family: heading;
+    border: 2px solid black;
+    background-color: white;
+    transition-duration: 0.2s;
+}
+
+.contact__button:hover{
+    background-color: black;
+    color: lightblue;
+}
+
+
+textarea{
+    width: 100%;
+    min-height: 15rem;
+    font-family: heading-small;
+}
+
+textarea:focus{
+    outline: none;
+    border: 2px solid lightblue;
+}
+
+.contact__row1{
+    width: 100%;
+    display:flex;
+}
+
+.contact__col1{
+    width: 35%;
+}
+
+.contact__col2{
+    margin-left: 3%;
+    width: 72%;
+}
+
+label{
+    font-family:heading;
+    display:block;
+    margin-bottom: 0.1em;
+    font-size: 1.5rem;
+}
+
+input{
+    width: 100%;
+    font-family:heading-small;
+}
+
+input:focus{
+    outline: none;
+    border: 2px solid lightblue;
 }
 
 .fade{
@@ -591,5 +670,17 @@ header ul li{
         grid-auto-rows: minmax(32rem, auto);
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 3.5em;
+    }
+
+    .contact__container{
+        width: 90%;
+    }
+
+    .contact__row1{
+        flex-direction: column;
+    }
+    .contact__col1, .contact__col2{
+        width: 100%;
+        margin-left:0;
     }
 }
