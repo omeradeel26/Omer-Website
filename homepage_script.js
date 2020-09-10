@@ -48,3 +48,8 @@ const observer  = new IntersectionObserver(callbackFunction, {
 faders.forEach(fade=>{
     observer.observe(fade);
 })
+
+
+var modal_checkers = document.getElementById("modal__checkers");
+
+var btn_checkers = document.getElementById("button__checkers");

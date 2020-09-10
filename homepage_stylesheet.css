@@ -225,6 +225,32 @@ header ul li{
     color:white;
 }
 
+.skills{
+    height: 50vh;
+    background-color:#eee;
+}
+
+.skills__heading{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    display: block;
+    font-family:heading;
+    font-size: 5.5rem;
+}
+
+.skills__list{
+    display: flex;
+    text-align: center;
+}
+
+.skills__list li{
+    display: block;
+    padding: 10rem;
+    font-family: heading-small;
+    font-size: 3rem;
+}
+
 .about{
     min-height: 80rem;
     width: 100%;
@@ -265,7 +291,7 @@ header ul li{
 
 .project{
     min-height:110rem;
-    background-color:#eee;
+    background-color:white;
     width: 100%;
     border: .1px solid transparent;
 }
@@ -321,6 +347,39 @@ header ul li{
     align-items: flex-end;
     overflow: hidden;
     box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
+}
+
+
+.project__modal{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.project__modalcontent{
+    background-color: #f4f4f4;
+    margin: 15% auto;
+    height: auto;
+    max-width: 600px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+.project__closeBtn{
+    color: #ccc;
+    float: right;
+    font-size: 3rem;
+}
+
+.project__closeBtn:hover, .project__closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .project__col--checkers{
@@ -425,16 +484,15 @@ header ul li{
 }
 
 .startup{
-    min-height: 80rem;
-    background-color: white;
+    min-height: 90vh;
+    background-color: #eee;
 }
 
 .startup__heading{
-    margin: 3rem 0;
-    margin-top: 9rem;
+    position:relative;
+    top:15%;
     font-size: 5.5rem;
     font-family: heading;
-    opacity: 0.8;
     text-align: center;
 }
 
@@ -521,7 +579,7 @@ header ul li{
 }
 
 .contact{
-    background-color: #eee;
+    background-color: white;
     height: 90vh;
 }
 
@@ -605,6 +663,14 @@ input:focus{
     border: 2px solid lightblue;
 }
 
+.contact__footer{
+    position:relative;
+    top: 40%;
+    text-align: center;
+    font-family:heading-small;
+    font-size: 2rem;
+}
+
 .fade{
     opacity: 0;
     transform: translateY(50px);
@@ -615,6 +681,20 @@ input:focus{
     opacity: 100%;
     transform: translateY(0);
 }
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
 
 @media (max-width: 900px) {
     .nav__links{
