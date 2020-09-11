@@ -50,6 +50,30 @@ faders.forEach(fade=>{
 })
 
 
-var modal_checkers = document.getElementById("modal__checkers");
+var modalBtns = document.querySelectorAll('.modal-open');
 
-var btn_checkers = document.getElementById("button__checkers");
+modalBtns.forEach(function(btn){
+    console.log(btn.getAttribute('data-modal'));
+    btn.onclick = function(){
+        var modal = btn.getAttribute('data-modal');
+        console.log(modal)
+        document.getElementById(modal).style.display = "block";
+        document.body.style.overflowY = "hidden";
+    };
+});
+
+var closeBtns = document.querySelectorAll('.modal-close');
+
+closeBtns.forEach(function(btn){
+    btn.onclick = function(){
+        var modal = btn.closest('.modal').style.display = 'none';
+        document.body.style.overflowY = 'scroll';
+    }
+})
+
+window.onclick = function(e){
+    if(e.target.className == "modal"){
+        e.target.style.display = "none";
+        document.body.style.overflowY = 'scroll';
+    }
+};

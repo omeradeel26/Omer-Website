@@ -74,24 +74,158 @@
 
     <section id="skills" class="skills">
         <div class="skills__heading fade">SKILLS</div>
+        <div class="skills__container">
+            <div class="skills__col1 fade">
+                <img class="skills__icon" src="imgs/fullstack.png">
+                <div class="skills__subheading">Full Stack Web Dev</div>
+                <ul class="skills__list">
+                    <li>- HTML, CSS & JS Proficent</li>
+                    <li>- Python backend using Flask</li>
+                    <li>- Databases with MongoDB & SQLite</li>
+                </ul>
+            </div>
 
-        <ul class="skills__list fade">
-            <li><img height="150" src="imgs/skillsimg.png"></li>
-            <li>Python Programming</li>
-            <li>UI/UX Design</li>
-        </ul>
+            <div style="transition-delay: 0.5s;" class="skills__col2 fade"> 
+                <img class="skills__icon" src="imgs/python.PNG">
+                <div class="skills__subheading">Python Programming</div>
+            </div>
+
+            <div style="transition-delay: 1s;" class="skills__col3 fade">
+                <img class="skills__icon" src="imgs/UI.JPG">
+                <div class="skills__subheading">UI/UX Design</div>
+
+            </div>
+
+        </div>
     </section>
 
     <span id="projects"></span>
 
-    <div id="modal__checkers" class="project__modal">
-        <div class="project__modalcontent">
-            <span class="project__closeBtn">&times;</span>
-            <iframe style="margin-left: 10%;"width="500" height="320" src="https://www.youtube.com/embed/lcZDWo6hiuI"></iframe>
-            <p>Hello I am a modal</p>
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Checkers <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                This project is inspired by the board game Americain Checkers. It was 
+                coded in Python and created with the GUI Processing. It took approximately 25 hours to code from scratch and was created for my grade 11 ICS final.
+                The goal of the game is to see which player can get all of the other players checkers first. The skills required to
+                build this project include a knowledge of loops to predict open spots with the jumping mechanim, knowledge of 
+                variables to control different factors of the game such as player turn or the number of checkers left and knowledge of 
+                UI to create different features such as a homescreen, gamescreen, instruction screen, and endgame screen. Check out the Github Repo 
+                linked. 
+            </div>
+
+            <div class="modal__subheading">Challenges + Lessons Learned</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam aspernatur commodi, facere ad soluta est, consectetur odit quisquam provident, natus ullam assumenda fuga quam. Nulla, repellat sapiente cum facilis accusantium iste saepe similique blanditiis, iure cumque deserunt debitis atque, maiores provident sunt sequi quam asperiores nemo fuga at quas expedita facere fugiat quod. Iusto et aliquam voluptatem magnam fugit, tempora debitis similique sit consectetur aut nisi repellendus itaque quisquam nam repellat assumenda culpa est.
+            </div>
+
         </div>
     </div>
 
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Sudoku Solver <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+            </div>
+
+            <div class="modal__subheading">Challenges + Lessons Learned</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Garden App <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+            </div>
+
+            <div class="modal__subheading">Challenges + Lessons Learned</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Validdit <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+            </div>
+
+            <div class="modal__subheading">Challenges + Lessons Learned</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Arduino Calculator <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+            </div>
+
+            <div class="modal__subheading">Challenges + Lessons Learned</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+            </div>
+
+        </div>
+    </div>
 
     <section class="project">
         <div class="project__heading">PROJECTS</div> 
@@ -99,35 +233,35 @@
              <div class="project__col project__col--checkers fade">
                  <div class="project__overlay">
                     <div class="project__overlaytext">
-                       <b>CHECKERS</b><br>Python checkers created with processing IDE.<br>Updated last January 2020. <br><br> <a id="button__checkers">READ MORE</a>
+                       <b>CHECKERS</b><br>Python checkers created with processing IDE.<br>Updated last January 2020. <br><br> <a class="modal-open" data-modal="modal1">READ MORE</a>
                     </div>
                  </div>
             </div>
-            <div class="project__col project__col--sudoku fade">
+            <div style="transition-delay: 0.5s;" class="project__col project__col--sudoku fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>SUDOKU SOLVER</b><br>Python program created to solve sudoku puzzle in PyGame GUI. Updated last July 2020. <br><br> <a>READ MORE</a>
+                        <b>SUDOKU SOLVER</b><br>Python program created to solve sudoku puzzle in PyGame GUI. Updated last July 2020. <br><br> <a class="modal-open" data-modal="modal2">READ MORE</a>
                     </div>
                 </div>
             </div>
-            <div class="project__col project__col--garden fade">
+            <div style="transition-delay: 1s;" class="project__col project__col--garden fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>GARDEN APP</b><br>Web app monitoring plant growth created with HTML, CSS, & Flask. Updated last July 2020. <br><br> <a>READ MORE</a>
+                        <b>GARDEN APP</b><br>Web app monitoring plant growth created with HTML, CSS, & Flask. Updated last July 2020. <br><br> <a class="modal-open" data-modal="modal3">READ MORE</a>
                     </div>
                 </div>
             </div>
             <div class="project__col project__col--reddit fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>VALIDDIT</b><br>Web app checking authenticity of REDDIT posts created with HTML, CSS, & Flask. Updated last June 2020. <br> <a>READ MORE</a>
+                        <b>VALIDDIT</b><br>Web app checking authenticity of REDDIT posts created with HTML, CSS, & Flask. Updated last June 2020. <br> <a class="modal-open" data-modal="modal4">READ MORE</a>
                     </div>
                 </div>
             </div>
-            <div class="project__col project__col--calculator fade">
+            <div style="transition-delay: 0.5s;" class="project__col project__col--calculator fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>Arduino Calculator</b><br>Basic calculator created with Arduino MC and programmed with C langauge. Updated last June 2020 <br><a>READ MORE</a>
+                        <b>Arduino Calculator</b><br>Basic calculator created with Arduino MC and programmed with C langauge. Updated last June 2020 <br><a class="modal-open" data-modal="modal5">READ MORE</a>
                     </div>
                 </div>
             </div>
