@@ -230,21 +230,21 @@ header ul li{
 }
 
 .skills{
-    min-height: 60vh;
+    min-height: 65vh;
     padding: 1rem;
     background-color:#eee;
 }
 
 .skills__heading{
     text-align: center;
-    padding-top: 7rem;
+    padding-top: 9rem;
     display: block;
     font-family:heading;
     font-size: 5.5rem;
 }
 
 .skills__container{
-    width: 55%;
+    width: 60%;
     margin: 5rem auto;
     padding: 0.5rem;
     display:flex;
@@ -257,18 +257,22 @@ header ul li{
 }
 
 .skills__icon{
-    height: 100px;
+    height: 125px;
 }
 
 .skills__subheading{
     font-family: heading-small;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 
 .skills__list{
-    
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    font-family:heading-small;
+    text-align: left;
+    margin-left: 4.5rem;
 }
 
 .about{
@@ -280,6 +284,7 @@ header ul li{
 .about__heading{
     text-align: center;
     margin-top: 9rem;
+    padding-top: 2rem;
     margin-bottom: 4rem;
     font-family:heading;
     font-size: 5.5rem;
@@ -310,7 +315,7 @@ header ul li{
 }
 
 .project{
-    min-height:110rem;
+    min-height: 120vh;
     background-color:white;
     width: 100%;
     border: .1px solid transparent;
@@ -324,7 +329,7 @@ header ul li{
     grid-auto-rows: minmax(32rem, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3.5em;
-}
+} 
 
 .project__heading{
     font-family: heading;
@@ -388,6 +393,7 @@ header ul li{
     margin: 20vh auto;
     height: 500px;
     max-width: 500px;
+    padding-bottom: 1rem;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     animation-name: modalopen;
     animation-duration: 1s;
@@ -413,6 +419,7 @@ header ul li{
     background-color: lightblue;
     padding: 1rem;
     margin-bottom: 1rem;
+    box-shadow: 0 8px 6px -6px rgba(0,0,0,0.3);
 }
 
 .modal__heading{ 
@@ -560,106 +567,83 @@ header ul li{
     background-color: #eee;
 }
 
+.startup__container{
+    width: 70%;
+    display:flex;
+    min-height: 38rem;
+    margin: 6rem auto;
+    justify-content: space-between;
+}
+
+.startup__col1{
+    width: 55%;
+    background-color: lightblue;
+    padding: 2rem;
+    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
+}
+
+.startup__col2{
+    width:40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
 .startup__heading{
     position:relative;
-    padding-top: 8rem;
+    padding-top: 9rem;
     font-size: 5.5rem;
     font-family: heading;
     text-align: center;
 }
 
-.startup__maincontaineraccesso{
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    display: flex;
-}
-
-.startup__subcontaineraccesso{
-    background-color: transparent;
-    width: 50%;
-    min-height: 45rem;
-}
-
-.startup__finalcontaineraccesso{
-    width: 100%;
-    height: 100%;
-    position:relative;
-    transform-style: preserve-3d;
-    transition: transform 1s ease-out;
-    background-color: lightblue;
-    box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
-}
-
-.startup__subcontaineraccesso:hover .startup__finalcontaineraccesso {
-    transform: rotateY(180deg);
-  }
-
-.startup__accessoinfoback{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    transform: rotateY(180deg);
-}
-
-.startup__accessoinfofront{
-    position: absolute;
-    backface-visibility: hidden;
-    width: 100%;
-    height: 100%;
-}
-
-.startup__accessoinfo {
+.startup__info {
     padding: 2rem;
     font-size: 2.5rem;
     font-family: heading-small;
 }
 
-.startup__accessoinfo ul {
-    margin-left: 4rem;
-}
-
-.startup__accessoinfo ul li{
-    margin-top: 1.5rem;
-    width:75%;
-}
-.startup__accessodate{
+.startup__date{
     font-size: 3rem;
-    display:block;
     font-family:heading-small;
     margin-bottom: 1rem;
 }
 
-.startup__accessoread{
-    text-align: right;
-}
-
-.startup__accessoheading{
-    display: block;
+.startup__otherheading{
     margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: 4000;
     font-family: heading-small;
 }
 
-.startup__accessoimg{
-    margin-left: 4%;
-    margin-top: 2%;
-    height: 40rem;
+.startup__read{
+    font-size: 2rem;
+    font-family: heading-small;
+    cursor: pointer;
+    opacity: 0.6;
+    transition-duration: 1s;
+}
+
+.startup__read:hover{
+    opacity: 1;
+}
+
+
+.startup__img{
+    height: 90%;
     box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
 }
 
 .contact{
     background-color: white;
-    height: 75vh;
+    height: 50vh;
 }
 
 .contact__container{
     width: 70%;
     margin: 0 auto;
-    position: relative;
-    top: 20%;
+    margin-top: 2rem;
 }
 
 .contact__boxes{
@@ -672,8 +656,7 @@ header ul li{
 
 .contact__header{
     margin: 0 auto;
-    position: relative;
-    top: 15%;
+    padding-top: 5rem;
     font-size: 5.5rem;
     font-family: heading;
     text-align: center;     
@@ -794,7 +777,9 @@ input:focus{
 
     .about__profile{
         margin-top:2rem;
-        width: auto;
+        width: 70%;
+        display: block;
+        margin: auto;
     }
 
     .project{
@@ -832,5 +817,24 @@ input:focus{
     .skills__col1, .skills__col2, .skills__col3{
         width:100%;
         padding: 1.5rem;
+    }
+
+    .startup__container{
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .startup__img{
+        display: none;
+    }
+
+    .startup__col1, .startup__col2{
+        width: 100%;
+    }
+    
+    .skills__list{
+        text-align: center;
+        list-style-position: inside;
+        margin-left: 0;
     }
 }

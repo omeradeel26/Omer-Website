@@ -31,7 +31,7 @@
         <div class="intro__container">
             <div class="intro__heading">OMER ADEEL</div>
             
-            <div class="intro__subheading">Aspiring software engineer and front-end developer.</div>
+            <div class="intro__subheading">Aspiring software engineer and web developer.</div>
 
         </div>
 
@@ -52,8 +52,8 @@
     <div id="about"></div>
     <section class="about">
         <div class="about__heading fade">ABOUT ME</div>
-        <div class="about__container fade">
-            <div class="about__content">
+        <div class="about__container">
+            <div class="about__content fade">
                 <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I have a great passion for technology and also love to
                 enjoy getting involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then coding completely from scratch!
                 This website is to showcase my personal projects and also a platform for me to demonstrate my progress as a developer. Along with coding, I am a HUGE FAN of basketball
@@ -68,7 +68,7 @@
                     </a> 
                 </button>
             </div>
-            <img class="about__profile" src="imgs/profile2.jpg">
+            <img class="about__profile fade" src="imgs/profile2.jpg" style="transition-delay: 0.5s; ">
         </div>
     </section>
 
@@ -79,21 +79,29 @@
                 <img class="skills__icon" src="imgs/fullstack.png">
                 <div class="skills__subheading">Full Stack Web Dev</div>
                 <ul class="skills__list">
-                    <li>- HTML, CSS & JS Proficent</li>
-                    <li>- Python backend using Flask</li>
-                    <li>- Databases with MongoDB & SQLite</li>
+                    <li>HTML, CSS & JS Proficent</li>
+                    <li>Python backend using Flask</li>
+                    <li>MongoDB & SQLite</li>
                 </ul>
             </div>
 
             <div style="transition-delay: 0.5s;" class="skills__col2 fade"> 
                 <img class="skills__icon" src="imgs/python.PNG">
                 <div class="skills__subheading">Python Programming</div>
+                <ul class="skills__list">
+                    <li>Intermediate proficency</li>
+                    <li>PyGame & Proccessing GUIs</li>
+                    <li>Recursive Algorithims</li>
+                </ul>
             </div>
 
             <div style="transition-delay: 1s;" class="skills__col3 fade">
                 <img class="skills__icon" src="imgs/UI.JPG">
                 <div class="skills__subheading">UI/UX Design</div>
-
+                <ul class="skills__list">
+                    <li>Web design experience </li>
+                    <li>Wireframing</li>
+                </ul>
             </div>
 
         </div>
@@ -268,43 +276,116 @@
         </div>
     </section>
 
-    <div id="startup"></div>
-    <section class="startup">
-        <div class="startup__heading fade">STARTUPS</div>
-        <div class="startup__maincontaineraccesso">
-            <div class="startup__subcontaineraccesso fade">
-                <div class="startup__finalcontaineraccesso">
-                    <div class="startup__accessoinfofront">
-                        <div class="startup__accessoinfo">
-                            <span class="startup__accessoheading"><b>Chief Technology Officer, ACCESSO</b></span>
-                            <span class="startup__accessodate">May 2020 - Present</span>
-                            <ul>
-                                <li>Led a tech team that designed and developed current website with over 1500 store reviews</li>
-                                <li>Pitched in the Youth Impact Challenge, making it to the top 7 out of 400 Canadian youth startups competing for $10 000 </li>
-                                <li>Helped fundraise over $1000 for the organization</li>
-                            </ul>
-                            <div class="startup__accessoread"><b>Read More On Accesso &#8594;</b></div>
-                        </div>
-                    </div>
-                    <div class="startup__accessoinfoback">
-                        <div class="startup__accessoinfo">
-                            <span class="startup__accessoheading"><b>ACCESSO</b></span>
-                            <span class="startup__accessodate">October 2019 - Present</span>
-                            Accesso is a student-run non-profit focused on tackling 
-                            wheelchair inaccessibility in the GTA.
-                            The website provides in-depth reviews on how wheelchair accessible malls 
-                            and stores are across Toronto. As Chief Technology Officer
-                            my responsibility is to lead the team responsible for managing and updating the website,
-                            an integral facet of the organization. Also, my other tasks involve the management of any IT related activites, such as our YouTube channel. 
-                            <div class="startup__accessoread"><a style="color: black;" target="_blank" href="https://accesso.org"><b>Check out our website!</b></a></div>             
-                        </div>
-                    </div>
-                </div>
+    <div class="modal" id="modal10">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">Accesso, Est. October 2019</div>
+                <span class="modal-close">&times;</span>
             </div>
-            <img src="imgs/accesso.png" class="startup__accessoimg fade">
+
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=R32-7GC8StI"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                Accesso is a student-run non-profit focused on tackling 
+                wheelchair inaccessibility in the GTA.
+                The website provides in-depth reviews on how wheelchair accessible malls 
+                and stores are across Toronto. As Chief Technology Officer
+                my responsibility is to lead the team responsible for managing and updating the website,
+                an integral facet of the organization. Also, my other tasks involve the management of any IT related activites, such as our YouTube channel. 
+            </div>
+
+            <div class="modal__subheading">Role & Responsibility</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nisi nihil, tenetur quis ducimus vel cumque voluptate. Voluptatum dignissimos, quam eum iure ea, ex beatae aperiam saepe vel quo recusandae!
+            </div>
+            <div class="modal__subheading">    <div class="startup__read"><a style="color: black;" target="_blank" href="https://accesso.org"><b>Check out our website!</b></a></div>  </div>
+
+        </div>
+    </div>
+
+    <div class="modal" id="modal11">
+        <div class="modal-content">
+            <div class="modal__header">
+                <div class="modal__heading">PRVD, Est. June 2020</div>
+                <span class="modal-close">&times;</span>
+            </div>
+
+            <iframe width="420" height="315" src="https://www.youtube.com/watch?v=R32-7GC8StI"> </iframe>
+
+            <div class="modal__subheading">Description</div>
+
+            <div class="modal__description">
+                PRVD is a website that allows users to seamlessly view donation opportunities nearby. Our
+                API filters through different donation drives and presents the user with options that are
+                convenient. The platform allows charities to gain more exposure for their initiatives with a
+                more targeted approach than a social media ad campaign. Through our item logging system,
+                charities can keep track of the items they have received from donations. Once a user donates
+                an item, it is automatically logged into a list that contains all the donated items. This allows the
+                charity to simply confirm donations instead of having to enter it into a separate system
+                themselve
+            </div>
+
+            <div class="modal__subheading">Role & Responsibility</div>
+
+            <div class="modal__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nisi nihil, tenetur quis ducimus vel cumque voluptate. Voluptatum dignissimos, quam eum iure ea, ex beatae aperiam saepe vel quo recusandae!
+            </div>
+            <div class="modal__subheading">    <div class="startup__read"><a style="color: black;" target="_blank" href="https://accesso.org"><b>Check out our website!</b></a></div>  </div>
+
+        </div>
+    </div>
+
+
+    <div id="startup"></div>
+
+    <section class="startup">
+
+        <div class="startup__heading fade">STARTUPS</div>
+
+        <div class="startup__container">
+
+            <div class="startup__col1 fade">
+                <div class="startup__otherheading"><b>Chief Technology Officer, ACCESSO</b></div>
+
+                <div class="startup__date">May 2020 - Present</div>
+
+                <ul class="startup__info">
+                    <li>Led a tech team that designed and developed current website with over 1500 store reviews</li>
+                    <li>Pitched in the Youth Impact Challenge, making it to the top 7 out of 400 Canadian youth startups competing for $10 000 </li>
+                    <li>Helped fundraise over $1000 for the organization</li>
+                </ul>
+
+                <a class="modal-open startup__read" data-modal="modal10">Read More On Accesso &#8594;</a>
+            </div>
+            
+            <div style="transition-delay: 0.5s;" class="startup__col2 fade">
+                <img src="imgs/accesso.png" class="startup__img fade">
+            </div>
+
         </div>
 
-        <div class="startup__PRVD">
+        <div class="startup__container">
+
+            <div style="transition-delay: 0.5s;" class="startup__col2 fade">
+                <img src="imgs/PRVD.jpg" class="startup__img fade">
+            </div>
+
+            <div class="startup__col1 fade">
+                <div class="startup__otherheading"><b>Chief Technology Officer, PRVD</b></div>
+
+                <div class="startup__date">June 2020 - Present</div>
+
+                <ul class="startup__info">
+                    <li>Founding member of federally registered not-profit organization</li>
+                    <li>Aided in securing charity partnerships for platform</li>
+                    <li>Head of IT support for client base</li>
+                </ul>
+
+                <a class="modal-open startup__read" data-modal="modal11">Read More On PRVD &#8594;</a>
+            </div>
 
         </div>
     </section>
