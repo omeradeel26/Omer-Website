@@ -244,20 +244,20 @@ header ul li{
 }
 
 .skills__container{
-    width: 60%;
+    width: 80%;
     margin: 5rem auto;
     padding: 0.5rem;
     display:flex;
     justify-content: space-between;
 }
 
-.skills__col1, .skills__col2, .skills__col3 {
-    width: 28%;
+.skills__col1, .skills__col2, .skills__col3, .skills__col4 {
+    width: 22%;
     text-align: center;
 }
 
 .skills__icon{
-    height: 125px;
+    height: 90px;
 }
 
 .skills__subheading{
@@ -271,8 +271,9 @@ header ul li{
     font-size: 2rem;
     margin-top: 0.5rem;
     font-family:heading-small;
-    text-align: left;
-    margin-left: 4.5rem;
+    text-align: center;
+    list-style-position: inside;
+    margin-left: 0;
 }
 
 .about{
@@ -396,7 +397,8 @@ header ul li{
     padding-bottom: 1rem;
     box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
     animation-name: modalopen;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
 }
 
 .modal-close{
@@ -457,9 +459,10 @@ header ul li{
 }
 
 @keyframes modalopen{
-    from{opacity: 0}
-    to{opacity: 1}
+    from{transform: translateY(-20%); opacity: 0;}
+    to{transform: translateY(0%); opacity: 1;}
 }
+
 .project__col--checkers{
     background-image: url(imgs/checkers.jpg);
     background-position: center;
@@ -654,14 +657,6 @@ header ul li{
     transition-duration: 0.2s;
 }
 
-.contact__header{
-    margin: 0 auto;
-    padding-top: 5rem;
-    font-size: 5.5rem;
-    font-family: heading;
-    text-align: center;     
-}
-
 .contact__button{
     padding: 1em;
     font-family: heading;
@@ -719,12 +714,41 @@ input:focus{
 }
 
 .contact__footer{
-    position:relative;
-    top: 40%;
     text-align: center;
     font-family:heading-small;
     font-size: 2.5rem;
+    margin-top: 8rem;
     margin-bottom: 1rem;
+}
+
+.contact__Hcontainer{
+    width: 70%;
+    display: flex;
+    margin: 6rem auto;
+}
+
+.contact__Hcol1{ 
+    width: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact__Hcol2{
+    width:93%;
+    text-align: center;
+    font-size: 5.5rem;
+    font-family: heading;
+}
+
+.contact__Hcol1 a{
+    transition: ease 0.5s all;
+    text-decoration: none;
+    color: grey;
+}
+
+.contact__Hcol1 a:hover{
+    color: lightblue;
 }
 
 .fade{
@@ -814,7 +838,7 @@ input:focus{
         justify-content: space-between;
     }
 
-    .skills__col1, .skills__col2, .skills__col3{
+    .skills__col1, .skills__col2, .skills__col3, .skills__col4{
         width:100%;
         padding: 1.5rem;
     }
@@ -830,11 +854,5 @@ input:focus{
 
     .startup__col1, .startup__col2{
         width: 100%;
-    }
-    
-    .skills__list{
-        text-align: center;
-        list-style-position: inside;
-        margin-left: 0;
     }
 }

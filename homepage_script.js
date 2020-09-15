@@ -56,7 +56,6 @@ modalBtns.forEach(function(btn){
     console.log(btn.getAttribute('data-modal'));
     btn.onclick = function(){
         var modal = btn.getAttribute('data-modal');
-        console.log(modal)
         document.getElementById(modal).style.display = "block";
         document.body.style.overflowY = "hidden";
     };

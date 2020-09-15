@@ -54,12 +54,12 @@
         <div class="about__heading fade">ABOUT ME</div>
         <div class="about__container">
             <div class="about__content fade">
-                <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I have a great passion for technology and also love to
-                enjoy getting involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then coding completely from scratch!
-                This website is to showcase my personal projects and also a platform for me to demonstrate my progress as a developer. Along with coding, I am a HUGE FAN of basketball
-                and an avid runner. I love getting to know people so feel free to send a message and we can chat. Cheers! <br>
+                <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I am extremely passionate about technology and love to
+                be involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then starting a new coding project from scratch!
+                This website is to showcase my personal projects and also a platform for me to record my progress as a developer. Along with coding, I am a HUGE FAN of basketball
+                and an avid runner. I enjoy getting to know people so feel free to send a message and we can chat. Cheers! <br>
                 <button class="intro__button">
-                    <a target="_blank" href="http://www.google.com">
+                    <a target="_blank" href="Resume.pdf">
                         <svg width="152px" height="50px" viewBox="0 0 180 60" class="border">
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="bg-line" />
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="hl-line" />
@@ -79,9 +79,8 @@
                 <img class="skills__icon" src="imgs/fullstack.png">
                 <div class="skills__subheading">Full Stack Web Dev</div>
                 <ul class="skills__list">
-                    <li>HTML, CSS & JS Proficent</li>
+                    <li>HTML, CSS & JS Profficent</li>
                     <li>Python backend using Flask</li>
-                    <li>MongoDB & SQLite</li>
                 </ul>
             </div>
 
@@ -89,18 +88,27 @@
                 <img class="skills__icon" src="imgs/python.PNG">
                 <div class="skills__subheading">Python Programming</div>
                 <ul class="skills__list">
-                    <li>Intermediate proficency</li>
                     <li>PyGame & Proccessing GUIs</li>
                     <li>Recursive Algorithims</li>
+                    <li>OOP</li>
                 </ul>
             </div>
 
-            <div style="transition-delay: 1s;" class="skills__col3 fade">
+            <div style="transition-delay: 0.25s;" class="skills__col3 fade">
                 <img class="skills__icon" src="imgs/UI.JPG">
                 <div class="skills__subheading">UI/UX Design</div>
                 <ul class="skills__list">
                     <li>Web design experience </li>
                     <li>Wireframing</li>
+                </ul>
+            </div>
+
+            <div style="transition-delay: 0.75s;" class="skills__col4 fade">
+                <img class="skills__icon" src="imgs/hardware.PNG">
+                <div class="skills__subheading">Hardware</div>
+                <ul class="skills__list">
+                    <li>Arduino Microcontroller</li>
+                    <li>C Programming</li>
                 </ul>
             </div>
 
@@ -112,7 +120,7 @@
     <div class="modal" id="modal1">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Checkers <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <div class="modal__heading">Checkers <a target="_blank" href="https://github.com/omeradeel26/Checkers"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
@@ -121,19 +129,21 @@
             <div class="modal__subheading">Description</div>
 
             <div class="modal__description">
-                This project is inspired by the board game Americain Checkers. It was 
-                coded in Python and created with the GUI Processing. It took approximately 25 hours to code from scratch and was created for my grade 11 ICS final.
-                The goal of the game is to see which player can get all of the other players checkers first. The skills required to
-                build this project include a knowledge of loops to predict open spots with the jumping mechanim, knowledge of 
+                This game of checkers was coded in Python and created with the GUI tool Processing. The skills required to
+                build this project include a knowledge of loops used to predict open spots, knowledge of 
                 variables to control different factors of the game such as player turn or the number of checkers left and knowledge of 
-                UI to create different features such as a homescreen, gamescreen, instruction screen, and endgame screen. Check out the Github Repo 
-                linked. 
+                UI to create different features such as a homescreen, gamescreen, instruction screen, and endgame screen. <a target="_blank" href="https://github.com/omeradeel26/Checkers">Check out the Github Repo 
+                linked to see the source code.</a>
             </div>
 
             <div class="modal__subheading">Challenges + Lessons Learned</div>
 
             <div class="modal__description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam aspernatur commodi, facere ad soluta est, consectetur odit quisquam provident, natus ullam assumenda fuga quam. Nulla, repellat sapiente cum facilis accusantium iste saepe similique blanditiis, iure cumque deserunt debitis atque, maiores provident sunt sequi quam asperiores nemo fuga at quas expedita facere fugiat quod. Iusto et aliquam voluptatem magnam fugit, tempora debitis similique sit consectetur aut nisi repellendus itaque quisquam nam repellat assumenda culpa est.
+               This project was really helpful for developing my experience with GUI's. I learned different techniques such as creating different screens
+               , buttons the players can use or how to interact with the mouse. Furthemore, I was challenged quite a bit with creating the jumping mechanism
+               in checkers because in order to create the feature the program must predict all the open spots a checker can jump to. My solution to this problem
+               was creating a convoluted while loop that did work, however with little bugs. Reflecting on the project, I wish I had created the jumping feature
+               with a recurisve algorithim. All in all, this project was fun to make and really challenged me to hone in on my Python programming skills.
             </div>
 
         </div>
@@ -142,7 +152,7 @@
     <div class="modal" id="modal2">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Sudoku Solver <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <div class="modal__heading">Sudoku Solver <a target="_blank" href="https://github.com/omeradeel26/sudoku-solver"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
@@ -151,8 +161,12 @@
             <div class="modal__subheading">Description</div>
 
             <div class="modal__description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
-            </div>
+                This program allows a user to play a randomly generated game of Sudoku and includes a solver as well if the user would like to use it.
+                Using a function that loops through an array with the Randomy Py module, the game randomly generates a Sudoku board for the user to play with. 
+                The function will call the solver function to make sure that the game is fully solveable for the user. The user when playing with the board can
+                select a number to place into the empty spaces and if the number is not valid then the user will get a mistake which appears in the bottom left corner. 
+                The solver function is created using a recursive algorithim called backtracking. If the user wants to solve the game, they press the spacebar and the board will become solved and the game will end. The game was created with 
+                the GUI python module PyGame.</div>
 
             <div class="modal__subheading">Challenges + Lessons Learned</div>
 
@@ -166,7 +180,7 @@
     <div class="modal" id="modal3">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Garden App <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <div class="modal__heading">Garden App <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
@@ -190,7 +204,7 @@
     <div class="modal" id="modal4">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Validdit <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <div class="modal__heading">Validdit <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
@@ -214,7 +228,7 @@
     <div class="modal" id="modal5">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Arduino Calculator <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github"></span></a></div>
+                <div class="modal__heading">Arduino Calculator <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
@@ -241,21 +255,21 @@
              <div class="project__col project__col--checkers fade">
                  <div class="project__overlay">
                     <div class="project__overlaytext">
-                       <b>CHECKERS</b><br>Python checkers created with processing IDE.<br>Updated last January 2020. <br><br> <a class="modal-open" data-modal="modal1">READ MORE</a>
+                       <b>CHECKERS</b><br>Python checkers created with processing IDE. Updated last January 2020. <br> <a class="modal-open" data-modal="modal1">READ MORE</a>
                     </div>
                  </div>
             </div>
             <div style="transition-delay: 0.5s;" class="project__col project__col--sudoku fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>SUDOKU SOLVER</b><br>Python program created to solve sudoku puzzle in PyGame GUI. Updated last July 2020. <br><br> <a class="modal-open" data-modal="modal2">READ MORE</a>
+                        <b>SUDOKU SOLVER</b><br>Python program created to solve sudoku puzzle in PyGame GUI. Updated last July 2020. <br> <a class="modal-open" data-modal="modal2">READ MORE</a>
                     </div>
                 </div>
             </div>
             <div style="transition-delay: 1s;" class="project__col project__col--garden fade">
                 <div class="project__overlay">
                     <div class="project__overlaytext">
-                        <b>GARDEN APP</b><br>Web app monitoring plant growth created with HTML, CSS, & Flask. Updated last July 2020. <br><br> <a class="modal-open" data-modal="modal3">READ MORE</a>
+                        <b>GARDEN APP</b><br>Web app monitoring plant growth created with HTML, CSS, & Flask. Updated last July 2020. <br> <a class="modal-open" data-modal="modal3">READ MORE</a>
                     </div>
                 </div>
             </div>
@@ -391,7 +405,19 @@
     </section>
 
     <section class="contact">
-        <div id="contact" class="contact__header fade">CONTACT</div>
+
+        <div class="contact__Hcontainer" id="contact">
+            <div class="contact__Hcol1 fade">
+                <a target="_blank" href="Resume.pdf"><i style="font-size: 20px" class="fa fa-file-text-o"></i></a>
+                <a target="_blank" href="https://github.com/omeradeel26"><i style="font-size: 20px" class="fa fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/omer-adeel"><i style="font-size: 20px" class="fa fa-linkedin"></i></a>
+            </div>
+    
+            <div style="transition-delay: 0.25s" class="contact__Hcol2 fade">
+                CONTACT ME
+            </div>   
+        </div>
+
         <div class="contact__container">
             <form class="contact-form" action="contactform.php" method="POST">
                 <div class="contact__row1">
@@ -410,7 +436,7 @@
                 <label class="fade">WRITE MESSAGE</label>
                 <textarea name="message" class="contact__boxes fade"></textarea>
 
-                <button type="submit" class="contact__button fade" name="submit">SEND MESSAGE</button>
+                <button type="submit" class="contact__button fade" name="submit"><i class="fa fa-send-o" > </i>&nbsp SEND MESSAGE </button>
             </form>
         </div>
 
