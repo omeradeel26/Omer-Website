@@ -16,7 +16,7 @@
     <header fade>
         <ul>
             <div>
-                <img onclick="topFunction()" href="/" id="nav__image" src="imgs/logov2.png" alt="logo">
+                <img onclick="topFunction()" id="nav__image" src="imgs/logov2.png" alt="logo">
             </div>
             <div>
                 <li><a class="nav__links" href="#about">ABOUT</a></li>
@@ -181,22 +181,25 @@
     <div class="modal" id="modal3">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Garden App <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
+                <div class="modal__heading">Hydro-Grown App <a target="_blank" href="https://github.com/omeradeel26/Hydro-Grown"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/Ady_jsXAetg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="modal__subheading">Description</div>
 
             <div class="modal__description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+                Backend is designed using Flask (micro web framework written in Python). In the backend, the program calls on the weather station API to receive data on future forecasts (Temperature, Precipitation, Solar Radiation). The data is then applied to a uniquely designed algorithm that calculates the amount of water (in liters) that is required to fill the plant’s water capacity to 100%. The algorithm adjusts the output depending on the number of hours it has been since the user has last watered the plant. The Algorithm uses Hargreaves Model: ET0 = 0.0135 (Temperature + 17.78) * Solar Radiation/day. Conversions are required for specific units but the algorithm collects Temperature (degrees Celsius), Precipitation (mm/meter^2), and Solar Radiation (MegaWatts/sec). Once the backend completes its calculations, Flask sends this information to the front-end. Front-end is designed in HTML/CSS with many hours spent on color, formatting, text, etc. Front-end also includes a welcome page and applies the algorithm for specific plants.
             </div>
 
             <div class="modal__subheading">Challenges + Lessons Learned</div>
 
             <div class="modal__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+               <b>Using Flask:</b> Flask was a challenging language to use in terms of its tedious installation process and importing the proper files. After 2-3 hours we finally got it to work where we used API code for getting data from the weather station.
+                <br><b>Algorithm:</b> The algorithm was difficult to compose because of the many different units. The API returned values that were in completely different units than what the algorithm required. To solve this, we wrote in conversion factors in our code to properly calculate the algorithm (Took 2 hours).
+                <br> <b>Calling Isolated Data from the API:</b> In order to improve the program, our initial plan was to calculate the hourly rate that water is evaporating/transpiring from the plant. However, upon further experimentation of the data from the API, we had trouble taking the specific temperature for each hour because of the bad organization of the list that the API returned. To solve this, we calculated the average amount of water leaving the plant rather than the hourly rate (Took 5-6 hours).
+                <br> <b>HTML/CSS Working:</b> As most of us were beginners, we had almost no experience with HTML and CSS in terms of coding. After learning the language, we worked to improve the display to tailor it to our liking (Took 16-18 hours)
             </div>
 
         </div>
@@ -229,16 +232,16 @@
     <div class="modal" id="modal5">
         <div class="modal-content">
             <div class="modal__header">
-                <div class="modal__heading">Arduino Calculator <a target="_blank" href="google.com"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
+                <div class="modal__heading">Arduino Calculator <a target="_blank" href="https://github.com/omeradeel26/Arduino-Calculator"><span style="margin-left: 1rem;"class="fa fa-github-square"></span></a></div>
                 <span class="modal-close">&times;</span>
             </div>
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/KXoVBRioYZs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="modal__subheading">Description</div>
 
             <div class="modal__description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, neque saepe. A blanditiis adipisci laborum maiores reiciendis ullam, possimus, excepturi at unde aut doloribus sit libero veniam minus nulla et.
+                The project I decided to build with the Arduino Mega MC was a basic calculator. The calculator can compute a 5 digit number with the operators: addition, subtraction, multiplication and division. The project includes a button for starting up and closing down the LCD screen and calculator program. Once the button is pressed, a buzzer sounds off to indicate the screen has turned on, and vice-versa when the screen turns off. The buzzer also sounds off when pressing down the ‘clear’ or ‘equals’ button. A potentiometer is also attached to the LCD, which controls the contrast of the display. The user can make calculations using previously made calculations by just pressing down an operation button with the old one on the screen.
             </div>
 
             <div class="modal__subheading">Challenges + Lessons Learned</div>
