@@ -76,3 +76,9 @@ window.onclick = function(e){
         document.body.style.overflowY = 'scroll';
     }
 };
+
+
+function menuScroll(x){
+    x.classList.toggle("change");
+    document.getElementsByClassName("navDropdown")[0].classList.toggle("drop");
+}

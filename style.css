@@ -230,15 +230,40 @@ header ul li{
     color:white;
 }
 
-.menuIcon{
+.menuIcon1, .menuIcon2, .menuIcon3{
     width: 35px;
     height: 5px;
     background-color:white;
     margin: 6px 0;
+    transition-duration: 0.5s;
+}
+
+.change .menuIcon1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .menuIcon2 {
+    opacity: 0;
+}
+
+.change .menuIcon3 {
+    transform: rotate(45deg) translate(-8px, -8px);
 }
 
 .menuContainer{
     display: none;
+}
+
+.navDropdown{
+    transform: translateY(0%);
+    opacity: 0;
+    z-index: 4;
+}
+
+.drop .navDropdown {
+    transform: translateY(0%);
+    opacity: 1;
+    display: block;
 }
 
 .skills{

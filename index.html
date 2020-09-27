@@ -18,11 +18,13 @@
             <div>
                 <img onclick="topFunction()" id="nav__image" src="imgs/logov2.png" alt="logo">
             </div>
-            <div class="menuContainer">
-                <div class="menuIcon"></div>
-                <div class="menuIcon"></div>
-                <div class="menuIcon"></div>
+
+            <div class="menuContainer" onclick="menuScroll(this)">
+                <div class="menuIcon1"></div>
+                <div class="menuIcon2"></div>
+                <div class="menuIcon3"></div>
             </div>
+            
             <div class="navContainer">
                 <li><a class="nav__links" href="#about">ABOUT</a></li>
                 <li><a class="nav__links" href="#skills">SKILLS</a></li>
@@ -31,8 +33,19 @@
                 <li><a class="nav__links" href="#contact">CONTACT</a></li>
             </div>
         </ul>
+
+        <div class="navDropdown">
+            <ul>
+                <li><a class="nav__links" href="#about">ABOUT</a></li>
+                <li><a class="nav__links" href="#skills">SKILLS</a></li>
+                <li><a class="nav__links" href=#projects>PROJECTS</a></li>
+                <li><a class="nav__links" href="#startup">STARTUPS</a></li>
+                <li><a class="nav__links" href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+        
     </header>
-    
+
     <section class="intro">
         <div class="intro__container">
             <div class="intro__heading">OMER ADEEL</div>
@@ -130,7 +143,7 @@
                 <span class="modal-close">&times;</span>
             </div>
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/IVNynBd6Cjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
             <div class="modal__subheading">Description</div>
 
@@ -138,8 +151,7 @@
                 This game of checkers was coded in Python and created with the GUI tool Processing. The skills required to
                 build this project include a knowledge of loops used to predict open spots, knowledge of 
                 variables to control different factors of the game such as player turn or the number of checkers left and knowledge of 
-                UI to create different features such as a homescreen, gamescreen, instruction screen, and endgame screen. <a target="_blank" href="https://github.com/omeradeel26/Checkers">Check out the Github Repo 
-                linked to see the source code.</a>
+                UI to create different features such as a homescreen, gamescreen, instruction screen, and endgame screen.
             </div>
 
             <div class="modal__subheading">Challenges + Lessons Learned</div>
@@ -162,8 +174,8 @@
                 <span class="modal-close">&times;</span>
             </div>
 
-            <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
-
+            <iframe width="420" height="315" src="https://www.youtube.com/embed/wWq1MTI2VW4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
             <div class="modal__subheading">Description</div>
 
             <div class="modal__description">
@@ -177,7 +189,10 @@
             <div class="modal__subheading">Challenges + Lessons Learned</div>
 
             <div class="modal__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+                I did not really have any challenges with this project other than the time commitment to creating it. I learned three new things with PyGame, backtracking
+                and Objected Oriented. I was slightly familiar with OOP before, but after this project it gave me a good idea on how classes and methods work.
+                In addition, I learned the backtracking algorithim which gave me the biggest challenge just trying to figure out how exactly the function would recurse and
+                change numbers, but definetly was a great learning experience. Lastly, I learned PyGame which is a GUI library, it was okay to use but just required a learning curve.
             </div>
 
         </div>
@@ -229,7 +244,10 @@
             <div class="modal__subheading">Challenges + Lessons Learned</div>
 
             <div class="modal__description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. A beatae earum sunt quia, assumenda recusandae, id exercitationem similique rem totam, placeat aspernatur consequatur numquam ipsa! Fugit, deleniti asperiores! Laborum, nesciunt!
+                Before creating this project using PRAW, we started it with JRAW (java reddit api wrapper). We realized that working with JAVA and implementing the API was much more difficult. 
+                We had to try using MAVEN which no one was experienced with and try messing with JSON files. We switched to Flask which eased up process signifigantly. The hardest part was creating 
+                the keyword checker, which checked for controverial keywords located in the reddit page and displayed them. All in all, the project was a good experience for web app development with Python
+                and was a lot of fun to make. 
             </div>
 
         </div>
