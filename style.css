@@ -500,6 +500,21 @@ header ul li{
     to{transform: translateY(0%); opacity: 1;}
 }
 
+.view-github a{
+    text-align: center;
+    margin: 3rem 63rem;
+    text-decoration: none;
+    font-family: heading-small;
+    display: inline-block;
+    font-size: 2.5rem;
+    transition-duration: 0.5s;
+}
+
+.view-github a:hover {
+    color: lightblue;
+
+}
+
 .project__col--checkers{
     background-image: url(imgs/checkers.jpg);
     background-position: center;
