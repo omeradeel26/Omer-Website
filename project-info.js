@@ -237,5 +237,23 @@ data = {
             year: "2020",
             cont: "edu"
         }
+    },
+
+    "Web Portfolio 2020": {
+        name: "Web Portfolio 2020",
+        image: "url(./media/web-2020.png)",
+        modal:{
+            name: "Web Portfolio 2020",
+            date: "05/26/2021",
+            summary: "this is an app",
+            github: "github/website",
+            lesson: "Don't use python"
+        }, 
+        filter: {
+            dev: "html", 
+            type: "static",
+            year: "2020",
+            cont: "pers"
+        }
     }
 }

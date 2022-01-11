@@ -58,6 +58,16 @@ a {
     line-height: 1em;
 }
 
+.scroll-text{
+    color: white;
+    font-family: heading;
+    font-size: 17px;
+    margin: 0;
+    position: relative;
+    top: 95vh;
+    text-align:center;
+    transform: translateX(10px);
+}
 .intro__subheading{
     color: lightblue;
     font-family: heading-small;
@@ -124,9 +134,8 @@ a {
 }
 
 #intro__linkedin{
-    font-size: 5rem;
+    font-size: 4.5rem;
     z-index: 1;
-    margin-left: 1.5rem;
     margin-bottom: 0.5rem;
     filter: brightness(110%);
     transition: all .5s ease-in-out;
@@ -138,9 +147,9 @@ a {
 }
 
 #intro__github{
-    font-size: 5rem;
+    font-size: 4.5rem;
     z-index: 1;
-    margin-left: 1.5rem;
+    margin-left: 1.75rem;
     margin-bottom: 0.5rem;
     filter: brightness(110%);
     transition: all .5s ease-in-out;
@@ -156,8 +165,9 @@ a {
 .intro__socialicons{
     width: 10%;
     position:relative;
-    margin-top:64rem;
+    margin-top:63rem;
     float:right;
+    margin-right: 2rem;
 }
 
 #nav__image{
