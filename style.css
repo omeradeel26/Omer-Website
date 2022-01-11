@@ -156,7 +156,7 @@ a {
 .intro__socialicons{
     width: 10%;
     position:relative;
-    margin-top:68rem;
+    margin-top:64rem;
     float:right;
 }
 
@@ -303,14 +303,15 @@ header ul li{
     margin: 0;
 }
 
-
 .skills__list{
     font-size: 2rem;
     margin-top: 0.5rem;
     font-family:heading-small;
-    text-align: center;
-    list-style-position: inside;
+    text-align: left;
+    transform: translateX(45px);
     margin-left: 0;
+    width:100%;
+    display: inline-block;
 }
 
 .about{
@@ -334,6 +335,10 @@ header ul li{
     display: flex;
 }
 
+button{
+    cursor:pointer;
+}
+
 .about__content{
     height: auto;
     width: 50%;
@@ -353,14 +358,17 @@ header ul li{
 }
 
 .project{
-    min-height: 120vh;
+    min-height: 115vh;
     background-color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    border: .1px solid transparent;
 }
 
 .project__container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 0.5em;
     display:grid;
@@ -372,8 +380,8 @@ header ul li{
 .project__heading{
     font-family: heading;
     text-align:center;
-    margin-bottom:3rem;
-    margin-top: 10rem;
+    transform: translateY(-5rem);
+    margin-bottom: 1.5rem;
     font-size: 5.5rem;
 }
 
@@ -590,7 +598,7 @@ header ul li{
 }
 
 .scroll-icon {
-    margin-top: 70rem;
+    margin-top: 64rem;
     margin-left: 50%;
     transform: scale(1.5);
     display: block;
@@ -649,7 +657,6 @@ header ul li{
     justify-content: space-evenly;
     align-items: center;
 }
-
 
 .startup__heading{
     position:relative;
@@ -776,7 +783,7 @@ input:focus{
     font-family:heading-small;
     font-size: 2.5rem;
     margin-top: 8rem;
-    margin-bottom: 1rem;
+    padding-bottom: 2rem;
 }
 
 .contact__Hcontainer{

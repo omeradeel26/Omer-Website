@@ -5,11 +5,17 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="modal.css">
+    <script src="project-info.js"></script>
+    <script src="https://kit.fontawesome.com/f4f19f6d6b.js" crossorigin="anonymous"></script>
+
     <title>Omer Adeel - Website</title>
     <link rel="icon" type="image/png" href="/imgs/favicon1.png"/>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="projects.css">
 </head>
 
 <body>
@@ -29,7 +35,7 @@
                 <li><a class="nav__links" href="#about">ABOUT</a></li>
                 <li><a class="nav__links" href="#skills">SKILLS</a></li>
                 <li><a class="nav__links" href=#projects>PROJECTS</a></li>
-                <li><a class="nav__links" href="#startup">STARTUPS</a></li>
+                <li><a class="nav__links" href="#startup">EXPERIENCE</a></li>
                 <li><a class="nav__links" href="#contact">CONTACT</a></li>
             </div>
         </ul>
@@ -39,12 +45,14 @@
                 <li><a class="nav__links" href="#about">ABOUT</a></li>
                 <li><a class="nav__links" href="#skills">SKILLS</a></li>
                 <li><a class="nav__links" href=#projects>PROJECTS</a></li>
-                <li><a class="nav__links" href="#startup">STARTUPS</a></li>
+                <li><a class="nav__links" href="#startup">EXPERIENCE</a></li>
                 <li><a class="nav__links" href="#contact">CONTACT</a></li>
             </ul>
         </div>
         
     </header>
+
+    <div class="cursor"></div>
 
     <section class="intro">
         <div class="intro__container">
@@ -73,7 +81,7 @@
         <div class="about__heading fade">ABOUT ME</div>
         <div class="about__container">
             <div class="about__content fade">
-                <b>Hi I'm Omer! I am a 17 year old high school student in grade 12 who loves to code. </b>I am extremely passionate about technology and love to
+                <b>Hi I'm Omer! I am a Computer Engineering Student at the University of Waterloo who loves to code. </b>I am extremely passionate about technology and love to
                 be involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then starting a new coding project from scratch!
                 This website is to showcase my personal projects and also a platform for me to record my progress as a developer. Along with coding, I am a HUGE FAN of basketball
                 and an avid runner. I enjoy getting to know people so feel free to send a message and we can chat. Cheers! <br>
@@ -83,7 +91,7 @@
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="bg-line" />
                             <polyline points="175,0.5 175,60 1,60 1,1 175,0.5" class="hl-line" />
                         </svg>
-                     resume
+                     Resume
                     </a> 
                 </button>
             </div>
@@ -92,14 +100,14 @@
     </section>
 
     <section id="skills" class="skills">
-        <div class="skills__heading fade">SKILLS</div>
+        <div class="skills__heading fade">TECHNICAL SKILLS</div>
         <div class="skills__container">
             <div class="skills__col1 fade">
                 <img class="skills__icon" src="imgs/fullstack.png">
                 <div class="skills__subheading">Full Stack Web Dev</div>
                 <ul class="skills__list">
-                    <li>HTML, CSS & JS Profficent</li>
-                    <li>Python backend using Flask</li>
+                    <li>HTML, CSS & JavaScript</li>
+                    <li>Flask, Particle.js, React, Netlify & React Native </li>
                 </ul>
             </div>
 
@@ -108,8 +116,8 @@
                 <div class="skills__subheading">Python Programming</div>
                 <ul class="skills__list">
                     <li>PyGame & Proccessing GUIs</li>
-                    <li>Recursive Algorithims</li>
-                    <li>OOP</li>
+                    <li>Recursion & OOP</li>
+                    <li>Dynamic Data Structures</li>
                 </ul>
             </div>
 
@@ -118,7 +126,7 @@
                 <div class="skills__subheading">UI/UX Design</div>
                 <ul class="skills__list">
                     <li>Web design experience </li>
-                    <li>Wireframing</li>
+                    <li>Wireframing using Figma</li>
                 </ul>
             </div>
 
@@ -126,7 +134,7 @@
                 <img class="skills__icon" src="imgs/hardware.PNG">
                 <div class="skills__subheading">Hardware</div>
                 <ul class="skills__list">
-                    <li>Arduino Microcontroller</li>
+                    <li>Arduino/STM-32 Microcontroller</li>
                     <li>C Programming</li>
                 </ul>
             </div>
@@ -135,6 +143,8 @@
     </section>
 
     <span id="projects"></span>
+
+    <!--
 
     <div class="modal" id="modal1">
         <div class="modal-content">
@@ -313,8 +323,154 @@
         </div>
     </div>
 
+    -->
+
     <section class="project">
-        <div class="project__heading">FEATURED PROJECTS</div> 
+        <div class="project__heading">PROJECTS GALLERY</div> 
+        
+        <div id="overlay">
+            <div id="modal">
+                <div id="modal_nav">
+                    <h4 style="font-size: 17px;"></h4>
+                    <h4 style="font-size:17px" id="close">X</h4>
+                </div>
+                <hr>
+                <div id="modal_content">
+                    <div id="modal_video">
+                        <iframe width="455" height="315" src="https://www.youtube.com/embed/IVNynBd6Cjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+    
+                    <div id="modal_info">
+                        <div id="modal_row">
+                            <div id="modal_links">
+                                <a target="_blank"><span style="font-size: 15px; cursor: pointer;" class="fa fa-github"></span></a>
+                            </div>
+                            <p style="font-size:15px; font-family: header;"></p>
+                        </div>
+                        <div>
+                            <div class="modal_info_group">
+                                <h5 style="font-size: 14px" >Summary</h5>
+                                <p style="font-size:12px;"></p>
+                            </div>
+                            <div class="modal_info_group">
+                                <h5 style="font-size: 14px">Lesson Learned</h5>
+                                <p style="font-size:12px;"></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="projects_cont">
+    
+            <div id="projects_infocont">
+    
+                <div id="projects_nav">
+                    <div id="nav_pages">
+                        <h4 id="counter">Page 1 | 3</h4> 
+                        <div style="display: flex;">
+                            <h4 onclick="backward_p()" class='btn'>< &nbsp &nbsp</h4>
+                            <h4 onclick="forward_p()" class='btn'>></h4>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="nav_filter">
+                        <h4 id="start">Filter Menu</h4>
+    
+                        <div class="nav_group">
+                            <h4>Year</h4>
+                            <div class="nav_option">
+                                <h5>2020</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="year-2020" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>2021</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="year-2021" type="checkbox">
+                            </div>
+                        </div>
+    
+                        <div class="nav_group">
+                            <h4>Type</h4>
+                            <div class="nav_option">
+                                <h5>Processing</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="type-processing" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>PyGame</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="type-pygame" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>Static Website</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="type-static" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>Web Apps</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="type-web" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>Arduino/STM-32</h5> 
+                                <input onclick="update_filter(this.id, this.checked)" id="type-arduino" type="checkbox"> 
+                            </div>
+                        </div>
+    
+                        <div class="nav_group">
+                            <h4>Context</h4>
+                            <div class="nav_option">
+                                <h5>Hackathon</h5> 
+                                <input onclick="update_filter(this.id, this.checked)" id="cont-hack" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>Eductation-Based</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="cont-edu" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>Personal</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="cont-pers" type="checkbox">
+                            </div>
+                        </div>
+    
+                        <div class="nav_group">
+                            <h4>Languages</h4>
+                            <div class="nav_option">
+                                <h5>Python</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="dev-pyth" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>HTML, CSS, JS</h5>
+                                <input onclick="update_filter(this.id, this.checked)" id="dev-html" type="checkbox">
+                            </div>
+    
+                            <div class="nav_option">
+                                <h5>C</h5>
+                                <input onclick="update_filter(this.id, this.checked)"id="dev-c" type="checkbox">
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div id="projects_grid"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <!--
         <div class="project__container fade">
              <div class="project__col project__col--checkers fade">
                  <div class="project__overlay">
@@ -361,8 +517,11 @@
         </div>
 
         <div class="view-github"><a target="_blank" href="https://github.com/omeradeel26">OTHER PROJECTS - GITHUB</a></div>
+    -->
 
     </section>
+
+    <!--
 
     <div class="modal" id="modal10">
         <div class="modal-content">
@@ -428,12 +587,13 @@
         </div>
     </div>
 
+-->
 
     <div id="startup"></div>
 
     <section class="startup">
 
-        <div class="startup__heading fade">STARTUPS</div>
+        <div class="startup__heading fade">EXPERIENCE</div>
 
         <div class="startup__container">
 
@@ -516,10 +676,10 @@
             </form>
         </div>
 
-        <div class="contact__footer">Created & maintained by Omer Adeel. Last updated January 2021.</div>
+        <div class="contact__footer">Created & maintained by Omer Adeel. Last updated January 2022.</div>
     </section>
-
     <script src="script.js"></script>
+    <script src="projects.js"></script>
 </body>
 
 </html>

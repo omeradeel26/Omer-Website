@@ -1,0 +1,203 @@
+#projects_cont{
+    display:flex;
+    flex-direction: column;
+    max-width: 1100px;
+    width: 100%;
+    transform: scale(1.1);
+}
+
+#projects_cont h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+#close:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+a:hover{
+    color:lightblue;
+}
+
+#projects_infocont{ 
+    display:flex;
+}
+
+#projects_nav{
+    padding: 8px;
+    min-width: 160px;
+    border-right: 1px solid grey;
+}
+
+#nav_pages{ 
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+}
+
+#nav_pages div h4{ 
+    transition: 0.5s ease-in;
+}
+
+#nav_pages div h4:hover{ 
+    color: lightblue;
+}
+
+#nav_filter{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+#start{
+    margin-bottom: 5px;
+}
+
+.nav_group{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.nav_option{
+    display:flex;
+    justify-content: space-between;
+    max-height: 18px;
+}
+
+#projects_grid{
+    width: 85%;
+    display:grid;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding-left: 8px;
+}
+
+.project_display{
+    border: 1px solid grey;
+    display:flex;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s ease-in;
+    flex-direction: column;
+    z-index: 4;
+}
+
+.modal_info_group h4 {
+    font-size: 0.9rem;
+}
+
+.project_overlay{
+    position: absolute;
+    top: 0;
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: 0.3s ease-in;
+}
+
+.modal-title{
+    opacity: 0;
+    font-size: 1.3rem;
+    transition: 0.5s ease-in;
+    z-index: 6;
+    color: white;
+}
+
+.modal-link{
+    color: white;
+    z-index: 6;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    display: block;
+    margin-top: 10px;
+}
+
+.modal-link:hover{
+    color: lightblue;
+    cursor: pointer;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.project_display:hover .project_overlay{
+    opacity: 0.5;
+}
+
+.project_display:hover .modal-link{
+    opacity: 1;
+}
+
+.modal-link:hover .modal-title{
+    color: lightblue;
+}
+
+.project_display:hover .modal-title {
+    opacity: 1;
+}
+
+.project input{
+    margin: 0px;
+    padding: 0px;
+    max-width: 10px;
+    max-height: 8px;
+}
+
+@font-face {
+    font-family: header;
+    src: url(../fonts/montserrat.ttf);
+}
+
+h1 { 
+    font-size: 8rem; 
+    font-family: header;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 7.5rem;
+}
+
+h2 {
+    font-family: header;
+    font-size: 1.8rem;
+    font-weight: 100;
+    color: lightblue;
+}
+
+h3{
+    font-family: header;
+    font-size: 40rem;
+    font-weight: 100;
+}
+
+h4{
+    font-family: header;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+}
+
+h5 {
+    font-family: header;
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 2px;
+}
+
