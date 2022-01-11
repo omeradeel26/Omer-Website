@@ -51,12 +51,11 @@ function all_projects(){
 
 function disp_modal(info){
   backdrop.style.display = "flex"
-
-
+  document.body.style.overflowY = 'hidden'
 
   //retrieve info 
 
-  console.log(backdrop.style.display)
+  console.log(info)
 
   nam = info 
   sum = data[info].modal.summary
@@ -65,7 +64,7 @@ function disp_modal(info){
   dat = data[info].modal.date
   vid = data[info].modal.video
 
-  document.getElementsByTagName('h4')[0].innerHTML = nam
+  document.getElementsByTagName('h4')[1].innerHTML = nam
   document.getElementsByTagName('a')[0].href = git
   document.getElementsByTagName('p')[0].innerHTML = dat
   document.getElementsByTagName('p')[1].innerHTML = sum
@@ -84,6 +83,7 @@ document.addEventListener("click", function(e){
   if (backdrop.style.display == "flex"){
     if ((e.target.id == "close") || (e.target.id == "overlay")){
       backdrop.style.display = "none"
+      document.body.style.overflowY = 'visible'
       stopAllYouTubeVideos()
     }
   }
