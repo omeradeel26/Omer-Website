@@ -279,7 +279,7 @@ header ul li{
 .skills{
     min-height: 65vh;
     padding: 1rem;
-    background-color:#eee;
+    background-color:#f8f9fa;
 }
 
 .skills__heading{
@@ -643,22 +643,23 @@ button{
 .startup{
     min-height: 90vh;
     padding: 2rem;
-    background-color: #eee;
+    background-color: #f8f9fa;
 }
 
 .startup__container{
-    width: 70%;
+    width: 75%;
     display:flex;
     min-height: 38rem;
     margin: 6rem auto;
     justify-content: space-between;
 }
 
+
 .startup__col1{
     width: 55%;
-    background-color: lightblue;
-    padding: 2rem;
     box-shadow: 8px 8px 6px -6px rgba(0,0,0,0.3);
+    background-color: lightblue;
+    padding: 20px;
 }
 
 .startup__col2{
@@ -675,6 +676,14 @@ button{
     font-family: heading;
     text-align: center;
 }
+
+.startup__heading span{
+    transition: 0.5s ease-in;
+}
+.startup__heading span:hover{
+    color: white;
+}
+
 
 .startup__info {
     padding: 2rem;

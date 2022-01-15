@@ -98,9 +98,9 @@ data = {
         modal:{
             name: "Validdit",
             date: "05/26/2021",
-            summary: "this is an app",
+            summary: "Validdit shows the user useful information about a Reddit post, such as the upvote/downvote ratio, info/history about the poster, comments with links to other news articles, and comments that contain keywords that may question or help verify the validity of the post. PRAW, also known as the Python Reddit API Wrapper, was used to access the Reddit API and receive public information from the site, such as a post's information and comments.",
             github: "github/validdit",
-            lesson: "Don't use python",
+            lesson: "Before creating this project using PRAW, we started it with JRAW (java reddit api wrapper). We realized that working with JAVA and implementing the API was much more difficult. We switched to Flask which eased up process signifigantly.",
             video: "https://www.youtube.com/embed/LzDc8xGj_F4"
         }, 
         filter: {

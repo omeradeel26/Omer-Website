@@ -19,6 +19,45 @@
 </head>
 
 <body>
+    <div id="overlay"></div>
+
+    <div id="modal">
+        <div id="modal_nav">
+            <h4 style="font-size: 17px;"></h4>
+            <h4 style="font-size:17px" id="close">X</h4>
+        </div>
+        <hr>
+        <div id="modal_content">
+            <div id="modal_video">
+                <iframe width="600" height="315" src="https://www.youtube.com/embed/IVNynBd6Cjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div id="modal_info">
+                <div id="modal_row">
+                    <div id="modal_links">
+                        <a target="_blank"><span style="font-size: 15px; cursor: pointer;" class="fa fa-github"></span></a>
+                    </div>
+                    <p style="font-size:15px; font-family: header;"></p>
+                </div>
+                <div>
+                    <div class="modal_info_group">
+                        <h5 style="font-size: 14px" >Summary</h5>
+                        <p style="font-size:12px;"></p>
+                    </div>
+                    <div class="modal_info_group">
+                        <h5 style="font-size: 14px">Lesson Learned</h5>
+                        <p style="font-size:12px;"></p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
     <header fade>
         <ul>
             <div>
@@ -84,7 +123,7 @@
         <div class="about__container">
             <div class="about__content fade">
                 <b>Hi I'm Omer! I am a Computer Engineering Student at the University of Waterloo who loves to code. </b>I am extremely passionate about technology and love to
-                be involved in my community. In the future, I hope to one day become a software developer because nothing gets me more excited then starting a new coding project from scratch!
+                be involved in my community. I hope to one day become a software or web developer because nothing gets me more excited then starting a new coding project from scratch!
                 This website is to showcase my personal projects and also a platform for me to record my progress as a developer. Along with coding, I am a HUGE FAN of basketball
                 and an avid runner. I enjoy getting to know people so feel free to send a message and we can chat. Cheers! <br>
                 <button class="intro__button">
@@ -124,7 +163,7 @@
             </div>
 
             <div style="transition-delay: 0.25s;" class="skills__col3 fade">
-                <img class="skills__icon" src="imgs/UI.JPG">
+                <img class="skills__icon" src="imgs/UI.png">
                 <div class="skills__subheading">UI/UX Design</div>
                 <ul class="skills__list">
                     <li>Web design experience </li>
@@ -328,42 +367,7 @@
     -->
 
     <section class="project fade">
-        <div class="project__heading">PROJECTS GALLERY</div> 
-        
-        <div id="overlay">
-            <div id="modal">
-                <div id="modal_nav">
-                    <h4 style="font-size: 17px;"></h4>
-                    <h4 style="font-size:17px" id="close">X</h4>
-                </div>
-                <hr>
-                <div id="modal_content">
-                    <div id="modal_video">
-                        <iframe width="455" height="315" src="https://www.youtube.com/embed/IVNynBd6Cjk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-    
-                    <div id="modal_info">
-                        <div id="modal_row">
-                            <div id="modal_links">
-                                <a target="_blank"><span style="font-size: 15px; cursor: pointer;" class="fa fa-github"></span></a>
-                            </div>
-                            <p style="font-size:15px; font-family: header;"></p>
-                        </div>
-                        <div>
-                            <div class="modal_info_group">
-                                <h5 style="font-size: 14px" >Summary</h5>
-                                <p style="font-size:12px;"></p>
-                            </div>
-                            <div class="modal_info_group">
-                                <h5 style="font-size: 14px">Lesson Learned</h5>
-                                <p style="font-size:12px;"></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
+        <div class="project__heading">PROJECTS GALLERY</div>        
         
 
         <div id="projects_cont">
@@ -600,17 +604,15 @@
         <div class="startup__container">
 
             <div class="startup__col1 fade">
-                <div class="startup__otherheading"><b>Chief Technology Officer, ACCESSO</b></div>
+                <div class="startup__otherheading"><b>Chief Technology Officer — Accesso</b><a target="_blank" href="https://accesso.org" ><i style="transform: translate(34px, -4px); font-size:25px; color:black;" class="fas fa-external-link-alt"></i></a></div>             
 
-                <div class="startup__date">May 2020 - Present</div>
+                <div class="startup__date">June 2020 - Present</div>
 
                 <ul class="startup__info">
-                    <li>Led a tech team that designed and developed current website with over 1500 store reviews</li>
-                    <li>Pitched in the Youth Impact Challenge, making it to the top 7 out of 400 Canadian youth startups competing for $10 000 </li>
-                    <li>Helped fundraise over $1000 for the organization</li>
+                    <li>Spearheaded design and development of website with over 1500 store reviews leading to 8000 views per month</li>
+                    <li>Pitched at multiple conferences, including Youth Impact Challenge, Bleed The North, and LOI, placing 7th of 300 organizations winning $1000</li>
+                    <li>Developed MVP app resulting in increased accessibility for users on the go</li>
                 </ul>
-
-                <a class="modal-open startup__read" data-modal="modal10">Read More On Accesso &#8594;</a>
             </div>
             
             <div style="transition-delay: 0.5s;" class="startup__col2 fade">
@@ -626,17 +628,15 @@
             </div>
 
             <div class="startup__col1 fade">
-                <div class="startup__otherheading"><b>Chief Technology Officer, PRVD</b></div>
+                <div class="startup__otherheading"><b>Chief Technology Officer — PRVD</b><a target="_blank" href="prvd.pdf" ><i style="transform: translate(34px, -4px); font-size:25px; color:black;" class="fas fa-external-link-alt"></i></a></div>
 
-                <div class="startup__date">June 2020 - Present</div>
+                <div class="startup__date">May 2020 - Present</div>
 
                 <ul class="startup__info">
-                    <li>Founding member of federally registered not-profit organization</li>
-                    <li>Aided in securing charity partnerships for platform</li>
+                    <li>Founding member of federally registered non-profit organization dedicated to making youth philantropy widely accessible</li>
+                    <li>Established organizational strategic plan, maintained website, and managed client relationship with three local charities </li>
                     <li>Head of IT support for client base</li>
                 </ul>
-
-                <a class="modal-open startup__read" data-modal="modal11">Read More On PRVD &#8594;</a>
             </div>
 
         </div>
@@ -678,10 +678,11 @@
             </form>
         </div>
 
-        <div class="contact__footer">Created & maintained by Omer Adeel. Last updated January 2022.</div>
+        <div class="contact__footer">Created & maintained by Omer Adeel. <span style="font-size: 25px;">&#169;</span> January 2022.</div>
     </section>
     <script src="script.js"></script>
     <script src="projects.js"></script>
+  
 </body>
 
 </html>

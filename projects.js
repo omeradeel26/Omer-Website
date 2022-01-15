@@ -41,7 +41,7 @@ function all_projects(){
       if (pages[p].length == 6){
         p = parseInt(p) +1
         pages[p] = []
-      }
+      } 
     }
   }
 
@@ -51,6 +51,7 @@ function all_projects(){
 
 function disp_modal(info){
   backdrop.style.display = "flex"
+  document.getElementById("modal").style.display = "block"
  // document.body.style.overflowY = 'hidden'
 
   //retrieve info 
@@ -64,7 +65,7 @@ function disp_modal(info){
   dat = data[info].modal.date
   vid = data[info].modal.video
 
-  document.getElementsByTagName('h4')[1].innerHTML = nam
+  document.getElementsByTagName('h4')[0].innerHTML = nam
   document.getElementsByTagName('a')[0].href = git
   document.getElementsByTagName('p')[0].innerHTML = dat
   document.getElementsByTagName('p')[1].innerHTML = sum
@@ -83,6 +84,7 @@ document.addEventListener("click", function(e){
   if (backdrop.style.display == "flex"){
     if ((e.target.id == "close") || (e.target.id == "overlay")){
       backdrop.style.display = "none"
+      document.getElementById("modal").style.display = "none"
      // document.body.style.overflowY = 'visible'
       stopAllYouTubeVideos()
     }
