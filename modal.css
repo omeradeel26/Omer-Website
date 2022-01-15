@@ -7,6 +7,7 @@
     z-index: 10;
     background-color: rgba(0,0,0,0.4);
     display: none;
+    overflow: auto;
     justify-content: center;
     align-items: center;
 }
@@ -14,6 +15,7 @@
 #modal{ 
     z-index: 6;
     border: 2px solid grey;
+    position: fixed;
     max-width: 800px;
     max-height: 400px;
     width: 100%;

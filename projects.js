@@ -51,7 +51,7 @@ function all_projects(){
 
 function disp_modal(info){
   backdrop.style.display = "flex"
-  document.body.style.overflowY = 'hidden'
+ // document.body.style.overflowY = 'hidden'
 
   //retrieve info 
 
@@ -83,7 +83,7 @@ document.addEventListener("click", function(e){
   if (backdrop.style.display == "flex"){
     if ((e.target.id == "close") || (e.target.id == "overlay")){
       backdrop.style.display = "none"
-      document.body.style.overflowY = 'visible'
+     // document.body.style.overflowY = 'visible'
       stopAllYouTubeVideos()
     }
   }
