@@ -513,6 +513,12 @@ button{
     margin-right: 2rem;
 }
 
+.modal__features {
+    font-size: 14px;
+    font-family:heading;
+    margin-left: 18px
+}
+
 @keyframes modalopen{
     from{transform: translateY(-20%); opacity: 0;}
     to{transform: translateY(0%); opacity: 1;}

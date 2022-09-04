@@ -11,7 +11,7 @@
     <script src="project-info.js"></script>
     <script src="https://kit.fontawesome.com/f4f19f6d6b.js" crossorigin="anonymous"></script>
 
-    <title>Omer Adeel - Website</title>
+    <title>Omer Adeel - Portfolio</title>
     <link rel="icon" type="image/png" href="/imgs/favicon1.png"/>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -23,7 +23,7 @@
 
     <div id="modal">
         <div id="modal_nav">
-            <h4 style="font-size: 17px;"></h4>
+            <h4 id="modalTitle" style="font-size: 17px;"></h4>
             <h4 style="font-size:17px" id="close">X</h4>
         </div>
         <hr>
@@ -35,18 +35,18 @@
             <div id="modal_info">
                 <div id="modal_row">
                     <div id="modal_links">
-                        <a target="_blank"><span style="font-size: 15px; cursor: pointer;" class="fa fa-github"></span></a>
+                        <a id="modalGit" target="_blank"><span style="font-size: 15px; cursor: pointer;" class="fa fa-github"></span></a>
                     </div>
-                    <p style="font-size:15px; font-family: header;"></p>
+                    <p id="modalDate" style="font-size:15px; font-family: header;"></p>
                 </div>
                 <div>
                     <div class="modal_info_group">
-                        <h5 style="font-size: 14px" >Summary</h5>
-                        <p style="font-size:12px;"></p>
+                        <h5 style="font-size: 14px;  font-family: header;">Features</h5>
+                        <ul id="modalFeatures"></ul>
                     </div>
                     <div class="modal_info_group">
-                        <h5 style="font-size: 14px">Lesson Learned</h5>
-                        <p style="font-size:12px;"></p>
+                        <h5 style="font-size: 14px">Technologies</h5>
+                        <ul id="modalStack"></ul>
                     </div>
                 </div>
             </div>
@@ -145,7 +145,7 @@
                 <img class="skills__icon" src="imgs/fullstack.png">
                 <div class="skills__subheading">Full Stack Web Dev</div>
                 <ul class="skills__list">
-                    <li>FE: React & HTML/CSS</li>
+                    <li>FE: React, MUI, HTML/CSS</li>
                     <li>BE: Node (Express), Flask, Next</li>
                     <li>Tools: Git, Firebase, MongoDB, Heroku & Netlify</li>
                 </ul>
@@ -161,16 +161,6 @@
                 </ul>
             </div>
 
-            <div style="transition-delay: 0.25s;" class="skills__col3 fade">
-                <img class="skills__icon" src="imgs/UI.png">
-                <div class="skills__subheading">UI/UX Design</div>
-                <ul class="skills__list">
-                    <li>Web UI design experience </li>
-                    <li>Wireframes & Prototyping</li>
-                    <li>Figma & Canva</li>
-                </ul>
-            </div>
-
             <div style="transition-delay: 0.75s;" class="skills__col4 fade">
                 <img class="skills__icon" src="imgs/hardware.PNG">
                 <div class="skills__subheading">Hardware</div>
@@ -181,6 +171,15 @@
                 </ul>
             </div>
 
+            <div style="transition-delay: 0.25s;" class="skills__col3 fade">
+                <img class="skills__icon" src="imgs/UI.png">
+                <div class="skills__subheading">UI/UX Design</div>
+                <ul class="skills__list">
+                    <li>Web UI design experience </li>
+                    <li>Wireframes & Prototyping</li>
+                    <li>Figma & Canva</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -259,7 +258,7 @@
                             </div>
     
                             <div class="nav_option">
-                                <h5>Eductation-Based</h5>
+                                <h5>Education</h5>
                                 <input onclick="update_filter(this.id, this.checked)" id="cont-edu" type="checkbox">
                             </div>
     
@@ -305,15 +304,36 @@
 
         <div class="startup__container">
 
+            <div style="transition-delay: 0.5s;" class="startup__col2 fade">
+                <img width= "350" height="300" src="media/yearzero.png" class="startup__img fade">
+            </div>
+
+            <div class="startup__col1 fade">
+                <div class="startup__otherheading"><b>Software Dev — Year Zero Studios</b><a target="_blank" href="https://www.yearzerostudios.com/" ><i style="transform: translate(34px, -4px); font-size:25px; color:black;" class="fas fa-external-link-alt"></i></a></div>             
+
+                <div class="startup__date">May 2022 - August 2022</div>
+
+                <ul class="startup__info">
+                    <li>Developed user-insights web-app from scratch and implemented key features on digital business card 
+                        web-app using React, Next, Firebase, and TypeScript
+                    <li>Implemented user authentication through custom React hook with Firebase oAuth increasing user sign-up speed</li>
+                    <li>Architected app stage-management with React Context, including CRUD operations of data to Firestore database</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="startup__container">
+
             <div class="startup__col1 fade">
                 <div class="startup__otherheading"><b>Chief Technology Officer — Accesso</b><a target="_blank" href="https://accesso.org" ><i style="transform: translate(34px, -4px); font-size:25px; color:black;" class="fas fa-external-link-alt"></i></a></div>             
 
-                <div class="startup__date">June 2020 - Present</div>
+                <div class="startup__date">June 2020 - August 2022</div>
 
                 <ul class="startup__info">
-                    <li>Spearheaded design and development of website with over 1500 store reviews leading to 8000 views per month</li>
-                    <li>Pitched at multiple conferences, including Youth Impact Challenge, Bleed The North, and LOI, placing 7th of 300 organizations winning $1000</li>
-                    <li>Developed MVP app resulting in increased accessibility for users on the go</li>
+                    <li>Spearheaded team of 6 to develop mobile app with React Native resulting in increased accessibility for 250+ active users </li>
+                    <li>Executed website revamp project including migration of 1500+ reviews resulting in 8000 views a month, a 300% increase</li>
+                    <li>Pitched to 400+ viewers in LOI, Bleed The North, and YIC, placing 7th of 300 organizations in YIC winning a $1000 grant </li>
                 </ul>
             </div>
             
@@ -332,12 +352,11 @@
             <div class="startup__col1 fade">
                 <div class="startup__otherheading"><b>Chief Technology Officer — PRVD</b><a target="_blank" href="prvd.pdf" ><i style="transform: translate(34px, -4px); font-size:25px; color:black;" class="fas fa-external-link-alt"></i></a></div>
 
-                <div class="startup__date">May 2020 - Present</div>
+                <div class="startup__date">May 2020 - June 2022</div>
 
                 <ul class="startup__info">
-                    <li>Founding member of federally registered non-profit organization dedicated to making youth philantropy widely accessible</li>
-                    <li>Established organizational strategic plan, maintained website, and managed client relationship with three local charities </li>
-                    <li>Head of IT support for client base</li>
+                    <li>Co-founded registered NPO dedicated to making youth philanthropy widely accessible through proprietary web platform</li>
+                    <li>Developed and maintained website using React and Node.js, and provided website technical support to 3+ local charities</li>
                 </ul>
             </div>
 
